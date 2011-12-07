@@ -1,1 +1,9 @@
 node_modules/
+*.log
+*.maf
+*.mtc
+*.mtc0
+*.out
+*.syntex.gz
+*.aux
+biblio.tex

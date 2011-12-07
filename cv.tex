@@ -1,0 +1,179 @@
+%!TEX TS-program = xelatex
+%!TEX TS-options = --shell-escape
+
+\documentclass[]{article}
+\usepackage[french]{babel}
+\usepackage{fancyhdr}
+\usepackage{titlesec}
+\usepackage{titling}
+\usepackage{color}
+\usepackage{fontspec,xltxtra,xunicode}
+\usepackage{tikz}
+\usepackage[left=6cm,top=2cm,right=1.6cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\usepackage[absolute,overlay]{textpos}
+%\usepackage[colorgrid,texcoord]{eso-pic}
+\usepackage{parskip}
+\usepackage{hyperref}
+
+\setlength{\TPHorizModule}{1cm}
+\setlength{\TPVertModule}{1cm}
+
+\definecolor{darkgray}{RGB}{51,51,51}
+\definecolor{gray}{RGB}{77,77,77}
+\definecolor{lightgray}{RGB}{153,153,153}
+\definecolor{white}{RGB}{255,255,255}
+\definecolor{green}{RGB}{181,226,70}
+
+\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\titleformat*{\section}{\LARGE\headingfont\color{gray}}
+\titleformat*{\subsection}{\Large\headingfont\color{gray}}
+\titleformat*{\subsubsection}{\large\headingfont\color{gray}}
+
+\defaultfontfeatures{Mapping=tex-text}
+\setromanfont[Mapping=tex-text, Color=5f5f5f]{Helvetica Neue Light}
+\setsansfont[Scale=MatchLowercase,Mapping=tex-text]{Gill Sans}
+\setmonofont[Scale=MatchLowercase]{Andale Mono}
+
+\renewcommand{\bibliography}{
+  \immediate\write18{/usr/local/bin/env coffee biblio.coffee}
+  \input{biblio.tex}
+}
+
+\thispagestyle{empty}
+\pagestyle{empty}
+
+\newcommand{\sideheader}[1]{
+  \vspace{\baselineskip}{\Large\headingfont\color{gray} #1}
+}
+\makeatletter
+\renewcommand{\section}{
+  \@startsection{section}{1}{0mm}
+    {2\parskip}
+    {\lineskip}
+    {\LARGE\headingfont\color{gray}}
+}
+\makeatother
+\makeatletter
+\renewcommand{\subsection}{
+  \@startsection{subsection}{1}{0mm}
+    {0mm}
+    {\parsep}
+    {\headingfont\large\color{gray}}
+}
+\makeatother
+
+\newcommand{\btitle}[1]{
+  \par
+  {\fontsize{10pt}{18pt}\selectfont #1}\\
+}
+\newcommand{\bauthors}[1]{
+  {\fontsize{9pt}{18pt}\addfontfeatures{Color=lightgray}\selectfont #1}\\
+}
+\newcommand{\bmore}[1]{
+  \emph{\fontsize{8pt}{18pt}\addfontfeatures{Color=lightgray}\selectfont #1}
+}
+
+\newcommand{\green}[1]{{\addfontfeatures{Color=green}#1}}
+\newcommand{\orange}[1]{{\addfontfeatures{Color=fda333}#1}}
+\newcommand{\purple}[1]{{\addfontfeatures{Color=d3a4f9}#1}}
+\newcommand{\red}[1]{{\addfontfeatures{Color=fb4485}#1}}
+\newcommand{\blue}[1]{{\addfontfeatures{Color=6ce0f1}#1}}
+
+\newcommand{\row}[3]{#1&\parbox[t]{11.8cm}{{#2}\\#3\vspace{\parsep}}\\\noalign{\smallskip}}
+\newcommand{\bold}[1]{{\headingfont\addfontfeatures{Color=gray}\normalsize{#1}}}
+\newcommand{\light}[1]{{\fontspec{Helvetica Neue Light}\color{lightgray}\footnotesize{#1}}}
+
+\setlength{\tabcolsep}{0pt}
+
+\begin{document}
+  \begin{tikzpicture}[remember picture,overlay]
+    \node [rectangle, fill=gray, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
+    \node [anchor=center] (name) at (box) {
+      \fontsize{40pt}{72pt}\selectfont
+      \fontspec{Helvetica Neue UltraLight}
+      \color{white}adrien\fontspec{Helvetica Neue}friggeri
+    };
+    \node [anchor=north] at (name.south) {
+      \fontsize{12pt}{24pt}\selectfont
+      \fontspec{Helvetica Neue UltraLight}
+      \color{white} social network analyst
+    };
+  \end{tikzpicture}
+  \vspace{2.5cm}
+  
+  \begin{textblock}{3.5}(1.5, 4.5)
+    \begin{flushright}
+      \sideheader{about}\\
+      31 rue Smith\\
+      69002 Lyon\\
+      France\\
+      +33 6.73.51.32.75\\
+      ~ \\
+      \href{mailto:adrien@friggeri.net}{adrien@friggeri.net}\\
+      \href{http://friggeri.net}{http://friggeri.net}\\
+      \href{http://facebook.com/adrien}{fb://adrien}\\
+      
+      \sideheader{languages}\\
+      bilingual french/english\\
+      spanish \& italian notions\\
+
+      \sideheader{programming}\\
+      $\heartsuit$ JavaScript\\
+      (ES5, node.js)\\
+      CSS3 \& HTML5\\ 
+      Python, C\\
+      OCaml, PHP
+    \end{flushright}
+  \end{textblock}
+  \vspace{-2\parskip}
+  \section*{\blue{int}erests}
+  complex networks, social networks, community detection, overlapping
+  communities, information diffusion, viral marketing, social inference, data
+  mining
+  
+  \section*{\red{edu}cation}
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+    \row{since 2009}
+      {\bold{Ph.D.} candidate in Computer Science \hfill \light{DNET/INRIA, LIP/ÉNS de Lyon}}
+      {\emph{A Quantified Theory of Social Cohesion.}}
+    \row{2007–2008}
+      {\bold{M.Sc. magna cum laude} \hfill \light{IXXI, École Normale Supérieure de Lyon}}
+      {Majoring in Computer Science\\
+      Specialization in Complex Systems}
+    \row{2006–2007}
+      {\bold{B.Sc. magna cum laude} \hfill \light{École Normale Supérieure de Lyon}}
+      {Majoring in Computer Science}
+    \row{2003–2006}
+      {\bold{Classes Préparatoires aux Grandes Écoles} \hfill \light{Lycée Fénelon, Lycée Louis le Grand, Paris}}
+      {Preparation for national competitive entrance exams to leading French ``grandes écoles'', specializing in mathematics and physics.}
+    \row{2003}
+      {\bold{French Baccalauréat S. with honors} \hfill \light{Lycée Louis le Grand, Paris}}
+      {Specialization in mathematics and physics}
+  \end{tabular*}
+  
+  \section*{\green{exp}erience}
+
+  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
+    \row{02–07/2009}{\bold{LIP6/CNRS, Paris}}{Research Internship. \emph{Visualization of complex networks.}}
+    \row{06–08/2008}{\bold{ISCPIF/CNRS, Paris}}{Research Internship. \emph{Diffusion in the Blogosphere. Happy Flu.}}
+    \row{06–08/2007}{\bold{LIP6/CNRS, Paris}}{Research Internship. \emph{Kernels in real world networks.}}
+    \row{07–08/2005}{\bold{\href{http://www.kelkoo.com}{Kelkoo.com}}}{Summer job. \emph{Creation of a keyword generator for Google Adwords.}}
+    \row{07–08/2004}{\bold{\href{http://www.monsieurprix.com}{MonsieurPrix.com}}}{Summer job. \emph{Development of an e-commerce product indexation spider.}}
+  \end{tabular*}
+  
+  \section*{\orange{exp}eriments}
+  \bold{2011 Fellows} \hfill
+                      \light{\href{http://fellows-exp.com}{fellows-exp.com}}\\
+  Automatic community detection among Facebook Friends in order to validate
+  the \emph{cohesion} measure, creation of friend lists.
+  
+  
+  \bold{2008 Happy Flu}\hfill
+                            \light{\href{http://happyflu.com}{happyflu.com}}\\
+  Experiment aimed to measure viral spreading of content across the
+  blogosphere.
+  
+  \section*{\purple{pub}lications}
+  \bibliography
+
+\end{document}
