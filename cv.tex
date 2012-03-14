@@ -9,7 +9,7 @@
 \usepackage{color}
 \usepackage{fontspec,xltxtra,xunicode}
 \usepackage{tikz}
-\usepackage[left=6cm,top=2cm,right=1.6cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\usepackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
 \usepackage[absolute,overlay]{textpos}
 %\usepackage[colorgrid,texcoord]{eso-pic}
 \usepackage{parskip}
@@ -48,7 +48,7 @@
 \makeatletter
 \renewcommand{\section}{
   \@startsection{section}{1}{0mm}
-    {2\parskip}
+    {\parskip}
     {\lineskip}
     {\LARGE\headingfont\color{gray}}
 }
@@ -78,6 +78,7 @@
 \newcommand{\purple}[1]{{\addfontfeatures{Color=d3a4f9}#1}}
 \newcommand{\red}[1]{{\addfontfeatures{Color=fb4485}#1}}
 \newcommand{\blue}[1]{{\addfontfeatures{Color=6ce0f1}#1}}
+\newcommand{\gray}[1]{{\addfontfeatures{Color=lightgray}#1}}
 
 \newcommand{\row}[3]{#1&\parbox[t]{11.8cm}{{#2}\\#3\vspace{\parsep}}\\\noalign{\smallskip}}
 \newcommand{\bold}[1]{{\headingfont\addfontfeatures{Color=gray}\normalsize{#1}}}
@@ -94,14 +95,14 @@
       \color{white}adrien\fontspec{Helvetica Neue}friggeri
     };
     \node [anchor=north] at (name.south) {
-      \fontsize{12pt}{24pt}\selectfont
+      \fontsize{14pt}{24pt}\selectfont
       \fontspec{Helvetica Neue UltraLight}
       \color{white} social network analyst
     };
   \end{tikzpicture}
   \vspace{2.5cm}
   
-  \begin{textblock}{3.5}(1.5, 4.5)
+  \begin{textblock}{3.6}(1.5, 4.34)
     \begin{flushright}
       \sideheader{about}\\
       31 rue Smith\\
@@ -109,10 +110,11 @@
       France\\
       +33 6.73.51.32.75\\
       ~ \\
+      \shorthandoff{:}
       \href{mailto:adrien@friggeri.net}{adrien@friggeri.net}\\
       \href{http://friggeri.net}{http://friggeri.net}\\
       \href{http://facebook.com/adrien}{fb://adrien}\\
-      
+      \shorthandon{:}
       \sideheader{languages}\\
       bilingual french/english\\
       spanish \& italian notions\\
@@ -120,18 +122,17 @@
       \sideheader{programming}\\
       $\heartsuit$ JavaScript\\
       (ES5, node.js)\\
+      Python, C, OCaml\\
       CSS3 \& HTML5\\ 
-      Python, C\\
-      OCaml, PHP
     \end{flushright}
   \end{textblock}
   \vspace{-2\parskip}
-  \section*{\blue{int}erests}
-  complex networks, social networks, community detection, overlapping
-  communities, information diffusion, viral marketing, social inference, data
-  mining
+  \section*{\gray{int}erests}
+  complex networks, social networks, community detection, community structure,
+  overlapping communities, information diffusion, viral marketing, social
+  inference, recommendation, data mining
   
-  \section*{\red{edu}cation}
+  \section*{\blue{edu}cation}
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
     \row{since 2009}
       {\bold{Ph.D.} candidate in Computer Science \hfill \light{DNET/INRIA, LIP/ÉNS de Lyon}}
@@ -151,7 +152,7 @@
       {Specialization in mathematics and physics}
   \end{tabular*}
   
-  \section*{\green{exp}erience}
+  \section*{\red{exp}erience}
 
   \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}ll}
     \row{02–07/2009}{\bold{LIP6/CNRS, Paris}}{Research Internship. \emph{Visualization of complex networks.}}
@@ -161,7 +162,13 @@
     \row{07–08/2004}{\bold{\href{http://www.monsieurprix.com}{MonsieurPrix.com}}}{Summer job. \emph{Development of an e-commerce product indexation spider.}}
   \end{tabular*}
   
-  \section*{\orange{exp}eriments}
+  \section*{\green{onl}ine}
+  \bold{2012 Who did I forget ?} \hfill
+                                 \light{\href{http://whodidiforget.com}{whodidiforget.com}}\\
+  Guest list recommandation for Facebook events based on friends already 
+  attending the event.
+
+  
   \bold{2011 Fellows} \hfill
                       \light{\href{http://fellows-exp.com}{fellows-exp.com}}\\
   Automatic community detection among Facebook Friends in order to validate
@@ -173,7 +180,57 @@
   Experiment aimed to measure viral spreading of content across the
   blogosphere.
   
-  \section*{\purple{pub}lications}
+  \section*{\orange{pub}lications}
   \bibliography
+  
+  \section*{\purple{pre}ss}
+  
+  \btitle{\href{http://www.allfacebook.com/facebook-event-app-2012-01}{Who Did I Forget? Facebook Application Has The Answer}}
+  \bauthors{All Facebook}
+  \bmore{January 31st, 2012}
+  
+  \btitle{\href{http://wisemetrics.com/blog/2012/01/power-of-the-graph/}{Power of the graph : auto-fill your event guest list by quoting only one person}}
+  \bauthors{Wise Metrics}
+  \bmore{January 31st, 2012}
+  
+  \btitle{\href{http://fr.locita.com/reseaux-sociaux/facebook/une-experience-sociale-sur-facebook-des-triangles-pour-mesurer-la-cohesion-sociale/}{Une expérience sociale sur Facebook : des triangles pour mesurer la cohésion sociale}}
+  \bauthors{Locita}
+  \bmore{January 31st, 2012}
+  
+  \btitle{\href{http://www.minutebuzz.com/2011/03/22/fellows-fait-le-tri-parmi-vos-contacts-facebook/}{Fellows fait le tri parmi vos contacts Facebook}}
+  \bauthors{MinuteBuzz}
+  \bmore{March 22nd, 2011}
+  
+  \btitle{\href{http://www.mediassociaux.fr/2011/03/07/a-quoi-sert-votre-graphe-social/}{A quoi sert votre graphe social ?}}
+  \bauthors{MediaSociaux.fr}
+  \bmore{March 7th, 2011}
+  
+  \btitle{\href{http://www.demainlaveille.fr/2011/03/02/fellows-met-de-lordre-dans-vos-contacts-facebook/}{Fellows met de l’ordre dans vos contacts Facebook}}
+  \bauthors{Demain la veille}
+  \bmore{March 2nd, 2011}
+  
+  \btitle{\href{http://compagnon-parfait.fr/un-outil-pour-trier-ses-amis-facebook-art-3042-1.html}{Un outil pour trier ses amis Facebook}}
+  \bauthors{Compagnon Parfait}
+  \bmore{March 1st, 2011}
+  
+  \btitle{\href{http://www.itrmanager.com/articles/115762/inria-lance-experimentation-reseau-social-facebook.html}{L’INRIA lance une expérimentation sur le réseau social Facebook}}
+  \bauthors{ITR Manager}
+  \bmore{February 28th, 2011}
+  
+  \btitle{\href{http://www.atelier.net/trends/articles/reseaux-ligne-communautes-sidentifient-automatiquement}{Sur les réseaux en ligne, les communautés s'identifient automatiquement}}
+  \bauthors{L'Atelier}
+  \bmore{February 23rd, 2011}
+  
+  \btitle{\href{http://socialiving.wordpress.com/2011/02/18/fellows-a-social-experiment/}{Fellows, a Social Experiment}}
+  \bauthors{Social Living}
+  \bmore{February 18th, 2011}
+  
+  \btitle{\href{http://www.inria.fr/centre/grenoble/actualites/experimentation-fellows-sur-facebook}{L'équipe DNET lance une expérimentation sur le réseau social Facebook}}
+  \bauthors{INRIA}
+  \bmore{February 16th, 2011}
+
+  \btitle{\href{http://www.ens-lyon.eu/1297847447289/0/fiche___article/&RH=ENS-LYON-FR-RECH-FAI}{Fellows : une expérience sociale}}
+  \bauthors{ENS Lyon}
+  \bmore{February 16th, 2011}
 
 \end{document}
