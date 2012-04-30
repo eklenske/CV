@@ -1,0 +1,2 @@
+exclude = '{$exclude,figures/cache,*.{aux,log,lof,lot,toc,fdb_latexmk,synctex.gz,synctex.gz(busy),bbl,blg,bcf,run.xml,out,thm,gnuplot,synctex.gz,loa,auxlock}}'
+include = '{$include,figures/*.gnuplot}'
