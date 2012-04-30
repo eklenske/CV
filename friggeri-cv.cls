@@ -1,7 +1,7 @@
 \ProvidesClass{friggeri-cv}[2012/04/30 CV class]
 \NeedsTeXFormat{LaTeX2e}
 
-\DeclareOption{ugly}{\def\@cv@ugly{}}
+\DeclareOption{print}{\def\@cv@print{}}
 \DeclareOption*{%
   \PassOptionsToClass{\CurrentOption}{article}%
 }
@@ -27,7 +27,7 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 
-\ifdefined\@cv@ugly
+\ifdefined\@cv@print
   \colorlet{green}{lightgray}
   \colorlet{orange}{lightgray}
   \colorlet{purple}{lightgray}
