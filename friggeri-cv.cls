@@ -28,11 +28,11 @@
 \definecolor{blue}{HTML}{6CE0F1}
 
 \ifdefined\@cv@print
-  \colorlet{green}{lightgray}
-  \colorlet{orange}{lightgray}
-  \colorlet{purple}{lightgray}
-  \colorlet{red}{lightgray}
-  \colorlet{blue}{lightgray}
+  \colorlet{green}{gray}
+  \colorlet{orange}{gray}
+  \colorlet{purple}{gray}
+  \colorlet{red}{gray}
+  \colorlet{blue}{gray}
   \colorlet{fillheader}{white}
   \colorlet{header}{gray}
 \else
