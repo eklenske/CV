@@ -118,9 +118,9 @@
 }
 
 \renewcommand{\subsection}[2]{
-  \par\vspace{1\parskip}%
+  \par\vspace{.5\parskip}%
   \Large\headingfont\color{headercolor} #2%
-  \par\vspace{1.25\parskip}%
+  \par\vspace{.25\parskip}%
 }
 
 \pagestyle{empty}
@@ -266,9 +266,15 @@
 \newcommand{\printbibsection}[2]{
   \begin{refsection}
     \nocite{*}
-    \printbibliography[type={#1}, title={#2}, heading=subbibliography]
+    \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
   \end{refsection}
 }
+
+\DeclareSortingScheme{chronological}{
+  \sort[direction=descending]{\field{year}}
+  \sort[direction=descending]{\field{month}}
+}
+
 
 
 %%%%%%%%%%%%%%%%
