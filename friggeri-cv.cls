@@ -48,6 +48,7 @@
 
 \RequirePackage[quiet]{fontspec}
 \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+\RequirePackage{fontawesome}
 
 \newfontfamily\bodyfont[]{Helvetica Neue}
 \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
@@ -56,7 +57,7 @@
 \defaultfontfeatures{Mapping=tex-text}
 \setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
 
-\setmathfont{XITS Math}
+%\setmathfont{XITS Math}
 
 %%%%%%%%%%
 % Header %
@@ -75,7 +76,7 @@
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth, minimum height=4cm] (box) at (current page.north){};
     \node [anchor=center] (name) at (box) {%
       \fontsize{40pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      {\thinfont #1}{ }{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{14pt}{24pt}\color{header}%
