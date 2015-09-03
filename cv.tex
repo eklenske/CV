@@ -6,8 +6,8 @@
 % xelatex cv
 % xelatex cv
 
-\documentclass[print]{friggeri-cv}
-\addbibresource{bibliography.bib}
+\documentclass[]{friggeri-cv}
+% \addbibresource{bibliography.bib}
 
 \begin{document}
 \header{Jelmer}{Tiete}
@@ -21,10 +21,10 @@
     10025 New York
     USA
     ~
-    \href{mailto:jelmer@tiete.be}{\textcolor{textcolor}{\faEnvelopeAlt}~jelmer@tiete.be}
-    \href{http://jelmertiete.com}{\textcolor{textcolor}{\faGlobe}~jelmertiete.com}
-    \href{http://twitter.com/jelmt}{\textcolor{textcolor}{\faTwitter}~@jelmt}
-    \href{https://github.com/JelmerT}{\textcolor{textcolor}{\faGithub}~JelmerT}
+%     \href{mailto:jelmer@tiete.be}{\textcolor{textcolor}{\faEnvelopeAlt}~jelmer@tiete.be}
+%     \href{http://jelmertiete.com}{\textcolor{textcolor}{\faGlobe}~jelmertiete.com}
+%     \href{http://twitter.com/jelmt}{\textcolor{textcolor}{\faTwitter}~@jelmt}
+%     \href{https://github.com/JelmerT}{\textcolor{textcolor}{\faGithub}~JelmerT}
   \section{languages}
     Dutch
     English
@@ -118,16 +118,16 @@ I'm a maker at heart and have a strong background in wireless sensor networks an
 \section{publications}
 
 
-\printbibsection{article}{article in peer-reviewed journal}
-\begin{refsection}
-  \nocite{*}
-  \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, heading=subbibliography]
-\end{refsection}
+% \printbibsection{article}{article in peer-reviewed journal}
 % \begin{refsection}
 %   \nocite{*}
-%   \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, heading=subbibliography]
+%   \printbibliography[sorting=chronological, type=inproceedings, title={international peer-reviewed conferences/proceedings}, heading=subbibliography]
 % \end{refsection}
-\printbibsection{misc}{other publications}
-\printbibsection{report}{research reports}
+% % \begin{refsection}
+% %   \nocite{*}
+% %   \printbibliography[sorting=chronological, type=inproceedings, title={local peer-reviewed conferences/proceedings}, heading=subbibliography]
+% % \end{refsection}
+% \printbibsection{misc}{other publications}
+% \printbibsection{report}{research reports}
 
 \end{document}

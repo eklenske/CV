@@ -46,16 +46,30 @@
 % Fonts %
 %%%%%%%%%
 
-\RequirePackage[quiet]{fontspec}
-\RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
-\RequirePackage{fontawesome}  % For icons
+% \RequirePackage[quiet]{fontspec}
+% \RequirePackage[math-style=TeX,vargreek-shape=unicode]{unicode-math}
+%
+% % \newfontfamily\bodyfont[]{Helvetica Neue}
+% % \newfontfamily\thinfont[]{Helvetica Neue UltraLight}
+% % \newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+%
+% \newfontfamily\bodyfont[]{Lato}
+% \newfontfamily\thinfont[]{Lato Thin}
+% \newfontfamily\headingfont[]{Lato Bold}
+%
+% \defaultfontfeatures{Mapping=tex-text}
+% \setmainfont[Mapping=tex-text, Color=textcolor]{Lato Light}
+% % \setmainfont{Lato}
+%
+% % \setmathfont{XITS Math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\RequirePackage[default]{lato}
+% \RequirePackage{fontawesome}  % For icons
 
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+% \newcommand{\normalfont}{\fontseries{l}\selectfont}
+\newcommand{\bodyfont}{\fontseries{l}\selectfont}
+\newcommand{\thinfont}{\fontseries{el}\selectfont}
+\newcommand{\headingfont}{\fontseries{b}\selectfont}
 
 \RequirePackage[none]{hyphenat} % No hyphenation
 
@@ -144,7 +158,7 @@
   #1&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\addfontfeature{Color=lightgray} #3}\\%
+    {\footnotesize #3}\\%
     #4\vspace{\parsep}%
   }\\}
 
@@ -175,108 +189,108 @@
 % Bibliography %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
-
-\DeclareFieldFormat[article]{title}{#1\par}
-\DeclareFieldFormat[inproceedings]{title}{#1\par}
-\DeclareFieldFormat[misc]{title}{#1\par}
-\DeclareFieldFormat[report]{title}{#1\par}
-
-\DeclareBibliographyDriver{article}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \usebibmacro{journal+issuetitle}%
-    \setunit{\space}%
-    \printfield{pages}%
-    \newunit%
-    \printlist{publisher}%
-    \setunit*{\addcomma\space}%
-    \printfield{year}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareBibliographyDriver{inproceedings}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}%
-    \printfield{booktitle}%
-    \setunit{\addcomma\space}%
-    \printfield{year}%
-    \setunit{\addcomma\space}%
-    \printlist{location}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareBibliographyDriver{misc}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \printfield{booktitle}%
-    \setunit*{\addcomma\space}%
-    \printfield{note}%
-    \setunit*{\addcomma\space}%
-    \printfield{year}%
-    \setunit{\addcomma\space}%
-    \printlist{location}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareBibliographyDriver{report}{%
-  \printfield{title}%
-  \newblock%
-  \printnames{author}%
-  \par%
-  \newblock%
-  {%
-    \footnotesize\addfontfeature{Color=lightgray}\itshape%
-    \printfield{type}%
-    \setunit{\space}%
-    \printfield{number}%
-    \setunit{\addcomma\space}%
-    \printfield{year}%
-    \newunit%
-  }
-  \par\vspace{0.3\baselineskip}
-}
-
-\DeclareNameFormat{author}{%
-  \small\addfontfeature{Color=lightgray}%
-  \ifblank{#3}{}{#3\space}#1%
-  \ifthenelse{\value{listcount}<\value{liststop}}
-    {\addcomma\space}
-    {}%
-}
-
-\newcommand{\printbibsection}[2]{
-  \begin{refsection}
-    \nocite{*}
-    \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
-  \end{refsection}
-}
-
-\DeclareSortingScheme{chronological}{
-  \sort[direction=descending]{\field{year}}
-  \sort[direction=descending]{\field{month}}
-}
+% % \RequirePackage[style=verbose, maxnames=99, sorting=ydnt]{biblatex}
+% 
+% \DeclareFieldFormat[article]{title}{#1\par}
+% \DeclareFieldFormat[inproceedings]{title}{#1\par}
+% \DeclareFieldFormat[misc]{title}{#1\par}
+% \DeclareFieldFormat[report]{title}{#1\par}
+% 
+% \DeclareBibliographyDriver{article}{%
+%   \printfield{title}%
+%   \newblock%
+%   \printnames{author}%
+%   \par%
+%   \newblock%
+%   {%
+%     \footnotesize\addfontfeature{Color=lightgray}\itshape%
+%     \usebibmacro{journal+issuetitle}%
+%     \setunit{\space}%
+%     \printfield{pages}%
+%     \newunit%
+%     \printlist{publisher}%
+%     \setunit*{\addcomma\space}%
+%     \printfield{year}%
+%     \newunit%
+%   }
+%   \par\vspace{0.3\baselineskip}
+% }
+% 
+% \DeclareBibliographyDriver{inproceedings}{%
+%   \printfield{title}%
+%   \newblock%
+%   \printnames{author}%
+%   \par%
+%   \newblock%
+%   {%
+%     \footnotesize\addfontfeature{Color=lightgray}%
+%     \printfield{booktitle}%
+%     \setunit{\addcomma\space}%
+%     \printfield{year}%
+%     \setunit{\addcomma\space}%
+%     \printlist{location}%
+%     \newunit%
+%   }
+%   \par\vspace{0.3\baselineskip}
+% }
+% 
+% \DeclareBibliographyDriver{misc}{%
+%   \printfield{title}%
+%   \newblock%
+%   \printnames{author}%
+%   \par%
+%   \newblock%
+%   {%
+%     \footnotesize\addfontfeature{Color=lightgray}\itshape%
+%     \printfield{booktitle}%
+%     \setunit*{\addcomma\space}%
+%     \printfield{note}%
+%     \setunit*{\addcomma\space}%
+%     \printfield{year}%
+%     \setunit{\addcomma\space}%
+%     \printlist{location}%
+%     \newunit%
+%   }
+%   \par\vspace{0.3\baselineskip}
+% }
+% 
+% \DeclareBibliographyDriver{report}{%
+%   \printfield{title}%
+%   \newblock%
+%   \printnames{author}%
+%   \par%
+%   \newblock%
+%   {%
+%     \footnotesize\addfontfeature{Color=lightgray}\itshape%
+%     \printfield{type}%
+%     \setunit{\space}%
+%     \printfield{number}%
+%     \setunit{\addcomma\space}%
+%     \printfield{year}%
+%     \newunit%
+%   }
+%   \par\vspace{0.3\baselineskip}
+% }
+% 
+% \DeclareNameFormat{author}{%
+%   \small\addfontfeature{Color=lightgray}%
+%   \ifblank{#3}{}{#3\space}#1%
+%   \ifthenelse{\value{listcount}<\value{liststop}}
+%     {\addcomma\space}
+%     {}%
+% }
+% 
+% \newcommand{\printbibsection}[2]{
+%   \begin{refsection}
+%     \nocite{*}
+%     \printbibliography[sorting=chronological, type={#1}, title={#2}, heading=subbibliography]
+%   \end{refsection}
+% }
+% 
+% \DeclareSortingScheme{chronological}{
+%   \sort[direction=descending]{\field{year}}
+%   \sort[direction=descending]{\field{month}}
+% }
 
 
 
