@@ -4,7 +4,7 @@ A new version of the famous Friggeri CV. My much simpler version now works witho
 
 # License
 
-Copyright (C) 2015, Edgar Klenske
+Copyright (C) 2015, Edgar Klenske 
 Copyright (C) 2014, Jelmer Tiete  
 Copyright (C) 2012, Adrien Friggeri
 
