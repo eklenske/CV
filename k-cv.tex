@@ -1,13 +1,13 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% 
+%
 % K-CV -- Klenske Curriculum Vitae
-% 
-% Simplified Friggeri CV 
+%
+% Simplified Friggeri CV
 % by Edgar Klenske (ed.klenske@gmx.de)
 % https://github.com/eklenske/CV
 %
 % Forked from:
-% Jelmer Tiente 
+% Jelmer Tiente
 % https://github.com/JelmerT/CV
 %
 % Based on original work by:
@@ -25,154 +25,237 @@
 
 
 \begin{document}
-\header{john}{smith}{junior business analyst} % Your name and current job
+\header{Edgar}{Klenske}{PhD student}
+% Your name and current job
 
 %-------------------------------------------------------------------------------
-%	SIDEBAR SECTION
+% SIDEBAR SECTION
 %-------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
 \section{date of birth}
-\color{gray}1970-01-01
+\color{gray}1986-08-13
 \section{contact}
-123 Broadway
-City, State 12345
-Country
+\color{gray}Dorfackerstra{\ss}e 19
+72074 T\"ubingen
+Germany
 ~
-+0 (000) 111 1111
-+0 (000) 111 1112
++49 175 3783003
++49 7071 601 565
 ~
-\href{mailto:john@smith.com}{john@smith.com}
-\href{http://www.smith.com}{http://www.smith.com}
-\href{http://facebook.com/johnsmith}{fb://jsmith}
+\href{mailto:eklenske@tue.mpg.de}{eklenske@tue.mpg.de}
+\section{focus}
+machine {\bfseries learning}
+predictive {\bfseries control}
 \section{languages}
-english mother tongue
-spanish \& italian fluency
+{\bfseries german} mother tongue
+{\bfseries english} fluency
+{\bfseries swedish} basics
 \section{programming}
-JavaScript
-Python, C++, PHP
-CSS3 \& HTML5
+Matlab, C++
 \end{aside}
 
 %-------------------------------------------------------------------------------
-%	EDUCATION SECTION
-%----------------------------------------------------------------------------------------
-
-\section{education}
+% EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\
+\section{education}\normalfont
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2011 \to 2012}
-{Master {\normalfont of Commerce}}
-{The University of California, Berkeley}
-{\emph{Money Is The Root Of All Evil -- Or Is It?} \\ This thesis explored the 
-idea that money has been the cause of untold anguish and suffering in the world. 
-I found that it has, in fact, not.}
+{2012-11 \to present}
+{PhD {\normalfont in machine learning}}
+{Max-Planck-Institute for Intelligent Systems, T\"ubingen, Germany}
+{\emph{Adaptive Autoguiding and Intelligent Control}.\\
+Supervisor: Bernhard Sch\"olkopf, \mbox{advisor}: Philipp Hennig.}
 %------------------------------------------------
 \entry
-{2007 \to 2008}
-{Bachelor {\normalfont of Business Studies}}
-{The University of California, Berkeley}
-{Specialization in Commerce}
+{2006-10 \to 2012-07}
+{Diplom {(diploma) \normalfont in engineering cybernetics}}
+{University of Stuttgart, Germany}
+{Diplom thesis: \emph{Nonparametric System Identification and Control for
+Periodic Error Correction in Telescopes}.\\
+Supervisors: Bernhard Sch\"olkopf and Frank Allg\"ower, advisors: Philipp
+Hennig, Stefan Harmeling and Gregor G\"obel. \\
+Graded 1.0 on German university scale from 1.0 (very
+good) to 5.0 (fail).\\
+Overall grade point average 1.6 on German university
+scale.}
+%------------------------------------------------
+\entry
+{1996-09 \to 2005-06}
+{Abitur (A-Levels)}
+{Theodor-Heuss-Gymnasium, Pforzheim}
+{Grade point average 1.3 on German school scale from 1.0 (very good) to 6.0
+\mbox{(insufficient)}.}
 %------------------------------------------------
 \end{entrylist}
 
-\section{experience}
+%-------------------------------------------------------------------------------
+% PUBLICATIONS SECTION
+%-------------------------------------------------------------------------------
+
+\section{publications (peer-reviewed)}
+
+{\Large \bfseries articles in journals}
+
+\bibentry{Dual Control for Approximate Bayesian Reinforcement Learning}{E.D.
+Klenske, P. Hennig}{Journal of Machine Learning Research, \emph{accepted}.
+\href{http://arxiv.org/abs/1510.03591}{\to arXiv}
+}
+
+\bibentry{Gaussian Process Based Predictive Control for Periodic
+Error Correction}
+{E.D. Klenske, M.N. Zeilinger, B. Sch\"olkopf, P. Hennig}
+{IEEE Transactions on Control Systems Technology, 2016.
+\href{http://dx.doi.org/10.1109/TCST.2015.2420629}{\to DOI},
+\href{https://is.tue.mpg.de/uploads_file/attachment/attachment/9/%
+Klenske_tcst__1_.pdf}{\to PDF}
+}
+
+{\Large \bfseries articles in conference proceedings}
+
+\bibentry{Approximate Dual Control Maintaining the Value of Information
+with an Application to Building Control}{E.D. Klenske, P. Hennig,
+B. Sch\"olkopf, M.N. Zeilinger}{Proceedings of the European Control Conference,
+2016.}
+
+\bibentry{Nonparametric Dynamics Estimation for Time Periodic Systems}{E.D.
+Klenske, M.N. Zeilinger, B. Sch\"olkopf, P. Hennig}{Proceedings of the 51st
+Annual Allerton Conference on Communication, Control, and Computing, 2013.
+\href{http://dx.doi.org/10.1109/Allerton.2013.6736564}{\to DOI}
+}
+
+
+% {\Large \bfseries theses}
+%
+% \bibentry{Nonparametric System Identification and Control for
+% Periodic Error Correction in Telescopes}
+% {E.D. Klenske}
+% {Diplom thesis for the University of Stuttgart, 2012.
+% \href{http://www.is.tuebingen.mpg.de/fileadmin/user_upload/files/publications/%
+% 2012/Klenske_DiplomaThesis_01.pdf}{\to PDF}
+% }
+
+% \bibentry{Visualisierung linguistischer Merkmale (Visualization of Linguistic
+% Features)}
+% {E.D. Klenske}
+% {Research thesis for the University of Stuttgart, 2011}
+
+%-------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%-------------------------------------------------------------------------------
+
+\section{professional experience}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2012 \to now}
-{LEHMAN BROTHERS}
-{Los Angeles, California}
-{\emph{1\textsuperscript{st} Year Analyst} \\
-Developed spreadsheets for risk analysis on exotic derivatives on a wide array 
-of commodities (ags, oils, precious and base metals), managed blotter and 
-secondary trades on structured notes, liaised with Middle Office, Sales and 
-Structuring for bookkeeping. \\
-Detailed achievements:
-\begin{itemize}
-\item Learned how to make amazing coffee
-\item Finally determined the reason for \textsc{PC LOAD LETTER}:
-\begin{itemize}
-\item Paper jam
-\item Software issues:
-\begin{itemize}
-\item Word not sending the correct data to printer
-\item Windows trying to print in letter format
-\end{itemize}
-\item Coffee spilled inside printer
-\end{itemize}
-\item Broke the office record for number of kitten pictures in cubicle
-\end{itemize}}
+{2006-08 \to 2013-12}
+{Owner}
+{Implexus Computerservice, Tiefenbronn, Germany}
+{Side-business, computer service for small companies and consumers}
 %------------------------------------------------
 \entry
-{2010 \to 2011}
-{LEHMAN BROTHERS}
-{London, United Kingdom}
-{\emph{Summer Intern} \\
-Rated "truly distinctive" for Analytical Skills and Teamwork.}
-%------------------------------------------------
-\entry
-{2008 \to 2009}
-{Buy More}
-{Burbank, California}
-{\emph{Computer Repair Specialist} \\
-Worked in the Nerd Herd and helped to solve computer problems by asking 
-customers to turn their computers off and on again.}
+{2011-03 \to 2011-05}
+{Internship}
+{ESG Elektroniksystem- und Logistik GmbH, F\"urstenfeldbruck, Germany}
+{Modeling traffic rule knowledge for driving assistence systems}
 %------------------------------------------------
 \end{entrylist}
 
 \clearpage
 
-\smallheader{john}{smith}
+\smallheader{Edgar}{Klenske}
 
 %-------------------------------------------------------------------------------
-%	AWARDS SECTION
+% INVITED TALKS SECTION
 %-------------------------------------------------------------------------------
 
-\section{awards}
+\section{invited talks \& visits} \bodyfont
+\begin{itemize}
+ \item Bosch Research, Renningen, 2015
+ \item Computational Learning \& Motor Control Lab, University of Southern
+California, 2014
+ \item EECS Department, University of California at Berkeley, 2014
+ \item Machine Learning and Robotics Colloquium, University of Stuttgart, 2014
+\end{itemize}
+
+
+%-------------------------------------------------------------------------------
+% COMMUNICATION SKILLS SECTION
+%-------------------------------------------------------------------------------
+
+\section{community} \bodyfont
+{\Large \bfseries summer schools}
+\begin{itemize}
+ \item Machine Learning Summer School (MLSS), T\"ubingen, 2013: responsible for
+video recording and post-processing.
+Available on \href{
+https://www.youtube.com/playlist?list=PLqJm7Rc5-EXFv6RXaPZzzlzo93Hl0v91E } { \to
+youtube}
+\end{itemize}
+
+{\Large \bfseries contributed reviews for}
+\begin{itemize}
+ \item Neural Information Processing Systems (NIPS)
+ \item International Conference on Machine Learning (ICML)
+\end{itemize}
+
+{\Large \bfseries teaching assistance}
+\begin{itemize}
+ \item teaching assistant for the lecture \emph{Intelligent Systems I} at the
+University of T\"ubingen (winter 2012)
+\item teaching assistant for the lecture \emph{Echtzeitdatenverarbeitung
+(real-time data processing)} at the University of Stuttgart (summer 2009)
+\end{itemize}
+
+{\Large \bfseries outreach}
+\begin{itemize}
+ \item weekend seminar on \emph{probability and uncertainty} for gifted
+high-school students, in collaboration with the Heidelberg Life Science Lab,
+March 2013 (Together with Philipp Hennig and Martin Kiefel)
+\end{itemize}
+
+{\Large \bfseries student representation}
+\begin{itemize}
+ \item PhD representative of the Empirical Inference Department at the
+Max-Planck-Institute for Intelligent Systems, T\"ubingen (1 year)
+ \item student delegate to the undergrad committee at the University of
+Stuttgart (2 terms)
+\item student delegate to the appointment committee \emph{Computation in
+Control} at the University of Stuttgart
+\item student delegate to the joint committee \emph{mechanical engineering} at
+the University of Stuttgart (2 terms)
+\end{itemize}
+
+{\Large \bfseries leadership}
+\begin{itemize}
+ \item vice-president of the student initiative for network security and
+technology transfer (1~year)
+\end{itemize}
+
+%-------------------------------------------------------------------------------
+% AWARDS SECTION
+%-------------------------------------------------------------------------------
+
+\section{awards \& scholarships}\normalfont
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2011}
-{Postgraduate Scholarship}
-{School of Business, The University of California}
-{Awarded to the top student in their final year of a Bachelors degree.}
-%------------------------------------------------
-\end{entrylist}
-
-%-------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS SECTION
-%-------------------------------------------------------------------------------
-
-\section{communication skills}
-
-\begin{entrylist}
+{2010-12 \to 2013-04}
+{VDI Elevate Scholar}
+{Verein Deutscher Ingenieure (Association of German Engineers)}
+{Scholarship providing seminars in management and soft skills}
 %------------------------------------------------
 \entry
-{2011}
-{Oral Presentation}
-{California Business Conference}
-{Presented the research I conducted for my Masters of Commerce degree.}
-%------------------------------------------------
-\entry
-{2010}
-{Poster}
-{Annual Business Conference, Oregon}
-{As part of the course work for BUS320, I created a poster analyzing several 
-local businesses and presented this at a conference.}
+{2005-07}
+{Ferry-Porsche-Prize}
+{Dr. Ing. hc F. Porsche AG}
+{for best grades in maths and physics in high school}
 %------------------------------------------------
 \end{entrylist}
-
-%-------------------------------------------------------------------------------
-%	PUBLICATIONS SECTION
-%-------------------------------------------------------------------------------
-
-\section{publications}
-\bibentry{Near a Raven -- A Critical Review of Poe's Works}{John 
-Smith}{Sprinkler Publishing, New York, 2010}
 
 \end{document}
