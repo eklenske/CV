@@ -31,6 +31,12 @@
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
 
+ % a few colours, for general use.
+\definecolor{dred}{RGB}{130,0,0} 
+\definecolor{dblu}{RGB}{0,0,130}
+\definecolor{dgr}{RGB}{000,125,122}
+\definecolor{ora}{HTML}{FF9933}
+
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
@@ -113,10 +119,23 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
+%         blue\or%
+%         red\or%
+%         orange\or%
+%         green\or%
+%         purple\or%
+%         blue\or%
+%         red\or%
+%         orange\or%
+%         green\or%
+	dgr\or%
+	dblu\or%
+	dred\or%
+	ora\or%
+	dgr\or%
+	dblu\or%
+	dred\or%
+	ora\or%
         purple\else%
         headercolor\fi%
     } #1#2#3%
@@ -200,7 +219,8 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=1.5cm,nohead,nofoot]{
+geometry}
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false}

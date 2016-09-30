@@ -19,13 +19,16 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[]{k-cv} % Add 'print' as an option into the square
+\documentclass[a4paper]{k-cv} % Add 'print' as an option into the square
                        % bracket to remove colors from this template
                        % for printing
+                       
+\usepackage[utf8]{inputenc}
 
+% \overfullrule=5mm
 
 \begin{document}
-\header{Edgar}{Klenske}{PhD student}
+\header{Edgar}{Klenske}{Dipl.-Ing. Technische Kybernetik}
 % Your name and current job
 
 %-------------------------------------------------------------------------------
@@ -33,62 +36,59 @@
 %-------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{date of birth}
-\color{gray}1986-08-13
-\section{contact}
+\includegraphics{Bewerbungsphoto_Edgar_300}
+\section{geboren}
+\color{gray}%
+am 1986-08-13
+in Pforzheim
+\section{kontakt}
 \color{gray}Dorfackerstra{\ss}e 19
 72074 T\"ubingen
-Germany
 ~
 +49 175 3783003
-+49 7071 601 565
 ~
-\href{mailto:eklenske@tue.mpg.de}{eklenske@tue.mpg.de}
-\section{focus}
+\href{mailto:ed.klenske@gmx.de}{ed.klenske@gmx.de}
+\section{fokus}
 machine {\bfseries learning}
 predictive {\bfseries control}
-\section{languages}
-{\bfseries german} mother tongue
-{\bfseries english} fluency
-{\bfseries swedish} basics
-\section{programming}
-Matlab, C++
+\section{sprachen}
+{\bfseries deutsch} Muttersprache
+{\bfseries englisch} fließend
+~
+{\bfseries Matlab} fließend 
+{\bfseries C++} fortgeschritten
+{\bfseries Python} Grundlagen
 \end{aside}
 
 %-------------------------------------------------------------------------------
 % EDUCATION SECTION
 %-------------------------------------------------------------------------------
 \
-\section{education}\normalfont
+\section{ausbildung}\normalfont
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
-{2012-11 \to present}
-{PhD {\normalfont in machine learning}}
-{Max-Planck-Institute for Intelligent Systems, T\"ubingen, Germany}
+{2012-11 \to heute}
+{Promotion {\normalfont in Machine Learning}}
+{Max-Planck-Institut für Intelligente Systeme, T\"ubingen}
 {\emph{Adaptive Autoguiding and Intelligent Control}.\\
-Supervisor: Bernhard Sch\"olkopf, \mbox{advisor}: Philipp Hennig.}
+Betreuer: Philipp Hennig, Bernhard Schölkopf, Melanie Zeilinger.}
 %------------------------------------------------
 \entry
 {2006-10 \to 2012-07}
-{Diplom {(diploma) \normalfont in engineering cybernetics}}
-{University of Stuttgart, Germany}
-{Diplom thesis: \emph{Nonparametric System Identification and Control for
-Periodic Error Correction in Telescopes}.\\
-Supervisors: Bernhard Sch\"olkopf and Frank Allg\"ower, advisors: Philipp
-Hennig, Stefan Harmeling and Gregor G\"obel. \\
-Graded 1.0 on German university scale from 1.0 (very
-good) to 5.0 (fail).\\
-Overall grade point average 1.6 on German university
-scale.}
+{Diplom {\normalfont in Technischer Kybernetik (Note 1,6)}}
+{Universität Stuttgart, Germany}
+{Diplomarbeit: \emph{Nonparametric System Identification and Control for
+Periodic Error Correction in Telescopes} (Note: 1,0).\\
+Betreuer: Philipp Hennig, Stefan Harmeling, Gregor G\"obel.
+}
 %------------------------------------------------
 \entry
 {1996-09 \to 2005-06}
-{Abitur (A-Levels)}
+{Abitur (Note: 1,3)}
 {Theodor-Heuss-Gymnasium, Pforzheim}
-{Grade point average 1.3 on German school scale from 1.0 (very good) to 6.0
-\mbox{(insufficient)}.}
+{}
 %------------------------------------------------
 \end{entrylist}
 
@@ -96,9 +96,9 @@ scale.}
 % PUBLICATIONS SECTION
 %-------------------------------------------------------------------------------
 
-\section{publications (peer-reviewed)}
+\section{publikationen}
 
-{\Large \bfseries articles in journals}
+{\Large \bfseries Artikel in Fachzeitschriften}
 
 \bibentry{Dual Control for Approximate Bayesian Reinforcement Learning}{E.D.
 Klenske, P. Hennig}{Journal of Machine Learning Research, \emph{accepted}.
@@ -114,7 +114,7 @@ Error Correction}
 Klenske_tcst__1_.pdf}{\to PDF}
 }
 
-{\Large \bfseries articles in conference proceedings}
+{\Large \bfseries Artikel in Konferenzen}
 
 \bibentry{Approximate Dual Control Maintaining the Value of Information
 with an Application to Building Control}{E.D. Klenske, P. Hennig,
@@ -147,21 +147,43 @@ Annual Allerton Conference on Communication, Control, and Computing, 2013.
 % WORK EXPERIENCE SECTION
 %-------------------------------------------------------------------------------
 
-\section{professional experience}
+\section{praktische erfahrung}
 
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {2006-08 \to 2013-12}
-{Owner}
-{Implexus Computerservice, Tiefenbronn, Germany}
-{Side-business, computer service for small companies and consumers}
+{Eigentümer}
+{Implexus Computerservice, Tiefenbronn}
+{Computer-Service für kleine Unternehmen und Endkunden (Nebenerwerb)}
 %------------------------------------------------
 \entry
 {2011-03 \to 2011-05}
 {Internship}
-{ESG Elektroniksystem- und Logistik GmbH, F\"urstenfeldbruck, Germany}
-{Modeling traffic rule knowledge for driving assistence systems}
+{ESG Elektroniksystem- und Logistik GmbH, F\"urstenfeldbruck}
+{Modellierung von Verkehrsregeln für Fahrerassistenzsysteme}
+%------------------------------------------------
+\end{entrylist}
+
+%-------------------------------------------------------------------------------
+% AWARDS SECTION
+%-------------------------------------------------------------------------------
+
+\section{preise \& auszeichnungen}\normalfont
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2010-12 \to 2013-04}
+{VDI Elevate Stipendiat}
+{Verein Deutscher Ingenieure}
+{Stipendium mit Sozialkompetenz- und Management-Seminaren}
+%------------------------------------------------
+\entry
+{2005-07}
+{Ferry-Porsche-Preis}
+{Dr. Ing. hc F. Porsche AG}
+{für hervorragende Leistungen in Mathematik und Physik}
 %------------------------------------------------
 \end{entrylist}
 
@@ -173,89 +195,76 @@ Annual Allerton Conference on Communication, Control, and Computing, 2013.
 % INVITED TALKS SECTION
 %-------------------------------------------------------------------------------
 
-\section{invited talks \& visits} \bodyfont
+\section{vorträge \& besuche} \bodyfont
 \begin{itemize}
+ \item Workshop on Analytic Probabilistic Radiation Treatment Planning, 
+    Tübingen, 2016
+ \item Institut für Technik Autonomer Systeme, Universität der Bundeswehr, 
+    München, 2016
+ \item Workshop on Learning Control, Tübingen, 2015
  \item Bosch Research, Renningen, 2015
  \item Computational Learning \& Motor Control Lab, University of Southern
-California, 2014
- \item EECS Department, University of California at Berkeley, 2014
- \item Machine Learning and Robotics Colloquium, University of Stuttgart, 2014
+    California, 2014
+ \item EE \& CS Department, University of California at Berkeley, 2014
+ \item Machine Learning and Robotics Colloquium, Universität Stuttgart, 2014
+ \item Heidelberger Life-Science Lab, 2012
 \end{itemize}
 
 
 %-------------------------------------------------------------------------------
 % COMMUNICATION SKILLS SECTION
 %-------------------------------------------------------------------------------
-
-\section{community} \bodyfont
-{\Large \bfseries summer schools}
+{\raggedright
+% \sloppy
+\section{engagement} \bodyfont
+{\Large \bfseries Summer Schools}
 \begin{itemize}
- \item Machine Learning Summer School (MLSS), T\"ubingen, 2013: responsible for
-video recording and post-processing.
-Available on \href{
-https://www.youtube.com/playlist?list=PLqJm7Rc5-EXFv6RXaPZzzlzo93Hl0v91E } { \to
+ \item Machine Learning Summer School (MLSS), T\"ubingen, 2013 \& 2015: Leitung 
+des Teams für Video- Aufzeichnungen und -Verarbeitung.
+Verfügbar auf \href{
+https://www.youtube.com/playlist?list=PLqJm7Rc5-EXFv6RXaPZzzlzo93Hl0v91E } {\to
 youtube}
 \end{itemize}
 
-{\Large \bfseries contributed reviews for}
+{\Large \bfseries Reviewer für}
 \begin{itemize}
  \item Neural Information Processing Systems (NIPS)
  \item International Conference on Machine Learning (ICML)
+ \item Journal for Machine Learning Research (JMLR)
 \end{itemize}
 
-{\Large \bfseries teaching assistance}
+{\Large \bfseries Lehrassistenz}
 \begin{itemize}
- \item teaching assistant for the lecture \emph{Intelligent Systems I} at the
-University of T\"ubingen (winter 2012)
-\item teaching assistant for the lecture \emph{Echtzeitdatenverarbeitung
-(real-time data processing)} at the University of Stuttgart (summer 2009)
+ \item Assistent für die Vorlesung \emph{Intelligent Systems I} an der 
+Universität T\"ubingen (WS 2012)
+\item Assistent für die Vorlesung \emph{Echtzeitdatenverarbeitung} an der 
+Universität Stuttgart (SS 2009)
 \end{itemize}
 
-{\Large \bfseries outreach}
+% {\Large \bfseries Öffentlichkeitsarbeit}
+% \begin{itemize}
+%  \item Wochenendseminar zum Thema \emph{Wahrscheinlichkeit und Unsicherheit} 
+% für hochbegabte Schüler, in Kollaboration mit dem Heidelberger Life Science 
+% Lab, März 2013 
+% %(mit Philipp Hennig und Martin Kiefel)
+% \end{itemize}
+
+{\Large \bfseries Ehrenamtliche Arbeit}
 \begin{itemize}
- \item weekend seminar on \emph{probability and uncertainty} for gifted
-high-school students, in collaboration with the Heidelberg Life Science Lab,
-March 2013 (Together with Philipp Hennig and Martin Kiefel)
+ \item Doktorandensprecher der Abteilung \emph{Empirische Inferenz} am
+Max-Planck-Institut für Intelligente Systeme, T\"ubingen (1~Jahr)
+ \item Studentenvertreter in der Studienkommission Technische 
+Kybernetik, Universität Stuttgart (2~Semester)
+\item Studentenvertreter in der Berufungskommission \emph{Computation in
+Control}, Universität Stuttgart
+\item Studentenvertreter in der \emph{Gemeinsamen Kommission Maschinenbau},
+Universität Stuttgart (2~Semester)
+ \item Stellvertretender Vorsitzender des Studentenvereins für 
+Netzwerksicherheit und Technologietransfer, \emph{WH-Netz e.V.} (1~Jahr)
 \end{itemize}
+}
 
-{\Large \bfseries student representation}
-\begin{itemize}
- \item PhD representative of the Empirical Inference Department at the
-Max-Planck-Institute for Intelligent Systems, T\"ubingen (1 year)
- \item student delegate to the undergrad committee at the University of
-Stuttgart (2 terms)
-\item student delegate to the appointment committee \emph{Computation in
-Control} at the University of Stuttgart
-\item student delegate to the joint committee \emph{mechanical engineering} at
-the University of Stuttgart (2 terms)
-\end{itemize}
+% \section{referenzen} \bodyfont
 
-{\Large \bfseries leadership}
-\begin{itemize}
- \item vice-president of the student initiative for network security and
-technology transfer (1~year)
-\end{itemize}
-
-%-------------------------------------------------------------------------------
-% AWARDS SECTION
-%-------------------------------------------------------------------------------
-
-\section{awards \& scholarships}\normalfont
-
-\begin{entrylist}
-%------------------------------------------------
-\entry
-{2010-12 \to 2013-04}
-{VDI Elevate Scholar}
-{Verein Deutscher Ingenieure (Association of German Engineers)}
-{Scholarship providing seminars in management and soft skills}
-%------------------------------------------------
-\entry
-{2005-07}
-{Ferry-Porsche-Prize}
-{Dr. Ing. hc F. Porsche AG}
-{for best grades in maths and physics in high school}
-%------------------------------------------------
-\end{entrylist}
 
 \end{document}
