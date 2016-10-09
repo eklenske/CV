@@ -17,6 +17,7 @@
 % Colors %
 %%%%%%%%%%
 
+
 \RequirePackage{xcolor}
 
 \definecolor{white}{RGB}{255,255,255}
@@ -30,6 +31,12 @@
 \definecolor{purple}{HTML}{D3A4F9}
 \definecolor{red}{HTML}{FB4485}
 \definecolor{blue}{HTML}{6CE0F1}
+
+ % a few colours, for general use.
+\definecolor{dred}{HTML}{7B332F}
+\definecolor{dblu}{HTML}{003e7d}
+\definecolor{dgr}{RGB}{000,125,122}
+\definecolor{ora}{HTML}{FF9933}
 
 \ifdefined\@cv@print
   \colorlet{green}{gray}
@@ -108,15 +115,20 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 %%%%%%%%%%%%%
 \RequirePackage{parskip}
 
+
 \newcounter{colorCounter}
 \def\@sectioncolor#1#2#3{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        green\or%
+        dgr\or%
+        dblu\or%
+        dred\or%
+        ora\or%
+        dgr\or%
+        dblu\or%
+        dred\or%
+        ora\or%
         purple\else%
         headercolor\fi%
     } #1#2#3%
@@ -147,7 +159,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 
 \setlength{\tabcolsep}{0pt}
 \newenvironment{entrylist}{%
-  \begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}p{2cm}l}
+  \begin{tabular*}{\textwidth}{p{2cm}l}
 }{%
   \end{tabular*}
 }
@@ -186,7 +198,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   \renewcommand{\section}[1]{
     \par\vspace{\baselineskip}{\Large\headingfont\color{headercolor} ##1}
   }
-  \begin{textblock}{3.6}(1.5, 4.33)
+  \begin{textblock}{3.6}(1.2, 4.55)
   \begin{flushright}
   \obeycr
 }{%
@@ -200,7 +212,8 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=5.5cm,top=2cm,right=2cm,bottom=2cm,nohead,nofoot]{
+geometry}
 \RequirePackage[hidelinks]{hyperref}
 \hypersetup{
     colorlinks=false}
