@@ -117,6 +117,11 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
         red\or%
         orange\or%
         green\or%
+        purple\or%
+        blue\or%
+        red\or%
+        orange\or%
+        green\or%
         purple\else%
         headercolor\fi%
     } #1#2#3%
@@ -160,6 +165,15 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
     {\footnotesize\color{gray} \bodyfont #3}\\%
     \bodyfont #4\vspace{\parsep}%
   }\\}
+  
+\newcommand{\entrythree}[3]{%
+\hangindent=3mm \hangafter1%
+  {\leavevmode\color{gray}\small #1}&\parbox[t]{11.8cm}{%
+    \bodyfont #2%
+    \hfill%
+    {\footnotesize\color{gray} \bodyfont #3}\\%
+  }\\}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%
 % Manual Bibliography %
