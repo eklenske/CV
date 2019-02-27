@@ -181,11 +181,12 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 
 % each item is a manual entry, since a bibfile is more pain than pleasure
 % for most people's CVs.
-\newcommand{\bibentry}[3]{%
-  {\bfseries #1}\\%
+\newcommand{\bibentry}[4]{%
+  {\bodyfont #1}\\%
   \hangindent=5mm \hangafter1%
-  {\color{black} \bodyfont #2\\%
-  {\footnotesize \bodyfont #3}}%
+  {\color{black} \bodyfont \emph{#2}\\%
+  {\footnotesize \bodyfont #3}\\%
+  {\footnotesize \bodyfont #4}}%
   }%
 
 %%%%%%%%%%%%%%
