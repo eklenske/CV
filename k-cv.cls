@@ -171,7 +171,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   {\leavevmode\color{gray}\small #1}&\parbox[t]{11.8cm}{%
     \bodyfont #2%
     \hfill%
-    {\footnotesize\color{gray} \bodyfont #3}\\%
+    {\footnotesize\color{gray} \bodyfont #3}%
   }\\}
 
 
