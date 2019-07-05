@@ -40,10 +40,12 @@ Unix, LaTeX, Git (intermediate)
 R, SQL (basic)
 \section{skills}
 Stan
-emcee
+PyMC3
+emcee 
 TensorFlow
 Bayesian statistics
 Hierarchical models
+Asteroseismology
 Software development \& publication (Python)
 \section{languages}
 English, Dutch (bilingual)
@@ -66,7 +68,7 @@ United Kingdom
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
 \section{research interests}
-\bodyfont The recent success of the \textit{Kepler} and K2 missions, and the ongoing release of data from \textit{Gaia} and TESS, we have access to a vast amount of astronomical data. I am interested in leveraging these data sets to make inferences of stellar physics and analysis systematics. I do this through a Bayesian use of populations of asteroseismic data, in combination with other sources. I have used hierarchical models to study systematics and constrain the Red Clump standard candle to high precision. My current work focuses on studying the relation between mass, rotation and age of solar-like stars in the \textit{Kepler} field.
+\bodyfont The recent success of the \textit{Kepler} and K2 missions, and the ongoing release of data from \textit{Gaia} and TESS, we have access to a vast amount of astronomical data. I am interested in leveraging these data sets to make inferences of stellar physics and analysis systematics. I do this through Bayesian population studies of asteroseismic data. I have used hierarchical models to constrain the Red Clump standard candle with \emph{Gaia} data, and my current work focuses on studying the relation between mass, age and asteroseismic rotation of solar-like stars in the \textit{Kepler} field.
 
 
 \section{presentations}
@@ -87,9 +89,9 @@ United Kingdom
 %------------------------------------------------
 \entry
 {2017 Jul.}
-{TASC3/KASC10 (poster presentation)}
+{TASC3/KASC10}
 {University of Birmingham, UK}
-{\emph{"Mixture Models applied to \emph{Kepler} backgrounds \& development for TESS}}
+{\emph{Poster: "Mixture Models applied to \emph{Kepler} backgrounds \& development for TESS"}}
 %------------------------------------------------
 \entry
 {2017 Apr.}
@@ -215,7 +217,6 @@ United Kingdom
 
 
 \section{teaching and research}
-
 \begin{entrylist}
 %------------------------------------------------
 \entry
@@ -223,6 +224,12 @@ United Kingdom
 {Advanced HE - Associate Fellow (AFHEA)}
 {Advanced HE}
 {}
+%------------------------------------------------
+\entry
+{2019}
+{Access to Birmingham (A2B) supervisor}
+{University of Birmingham}
+{Support applicants from disenfranchised backgrounds through the A2B scheme}
 %------------------------------------------------
 \entry
 {2017 \to now}
@@ -246,7 +253,7 @@ United Kingdom
 {2015}
 {Ogden Trust Teach Physics Intern}
 {Bishop Challoner Catholic College, Birmingham, UK}
-{I helped teach pupils throughout lessons. and prepared and taught a lesson \& careers workshop of my own
+{Helped teach pupils throughout lessons, prepared and taught a lesson \& careers workshop of my own
 design.}
 %------------------------------------------------
 \end{entrylist}
@@ -283,6 +290,8 @@ design.}
 {Developed and taught a series of lessons and lab activities engaging Year 9 pupils with exoplanet characterisation and asteroseismology.}
 \end{entrylist}
 
+\clearpage
+\smallheader{oliver james  }{hall}
 
 \section{community services}
 \begin{entrylist}
@@ -308,7 +317,7 @@ design.}
 {University of Birmingham, UK}
 %------------------------------------------------
 \end{entrylist}
-\smallheader{oliver james  }{hall}
+
 
 
 \section{grants \& awards}
@@ -340,22 +349,22 @@ design.}
 \end{entrylist}
 
 \section{publications}
-\bibentry{\textbf{Hall, O. J.}, Davies, G. R., Elsworth, Y. P. et al. [2 citations]}
+\bibentry{\textbf{Hall, O. J.}, Davies, G. R., Elsworth, Y. P. et al. [3 citations]}
 {Testing asteroseismology with \textit{Gaia} DR2: Hierarchical models of the Red Clump}
 {Monthly Notices of the Royal Astronomical Society, 2019}
 {\texttt{doi:10.1093/mnras/stz1092, arXiv:1904.07919}}
 
 
 \bibentry{{Bugnet}, L., {Garc{\'\i}a}, R. A., {Mathur}, S.,
-         {Davies}, G. R., \textbf{{Hall}, O. J.}, {Lund}, M. N., {Rendle}, B. M.}
+         {Davies}, G. R., \textbf{{Hall}, O. J.}, {Lund}, M. N., {Rendle}, B. M. }
 {FliPer$_{Class}$: In search of solar-like pulsators among TESS targets}
 {arXiv e-prints, 2019}
-{\texttt{arXiv:1902.09854}}
+{\texttt{doi:10.1051/0004-6361/201834780, arXiv:1902.09854}}
 
-\bibentry{{Huber}, D, {Chaplin}, W. J., {Chontos}, A ... \textbf{{Hall}, O. J.} ... et al. [3 citations]}
+\bibentry{{Huber}, D, {Chaplin}, W. J., {Chontos}, A ... \textbf{{Hall}, O. J.} ... et al. [5 citations]}
 {{A Hot Saturn Orbiting An Oscillating Late Subgiant Discovered by TESS}}
 {arXiv e-prints, 2019}
-{\texttt{arXiv:1901.01643}}
+{\texttt{doi:10.3847/1538-3881/ab1488, arXiv:1901.01643}}
 
 \bibentry{{Lightkurve Collaboration}, {Cardoso}, J. V. d. M., {Hedges}, C. ...       					\textbf{{Hall}, O. J.} ... et al. [2 citations]}
 {Lightkurve: Kepler and TESS time series analysis in Python}
@@ -363,7 +372,7 @@ design.}
 {\texttt{ascl:1812.013}}
 
 \bibentry{{Bugnet}, L., {Garc{\'\i}a}, R. A., {Davies}, G. R. ...
-         \textbf{{Hall}, O. J.} ... et al. [7 citations]}
+         \textbf{{Hall}, O. J.} ... et al. [8 citations]}
 {FliPer: A global measure of power density to estimate surface gravities of main-sequence solar-like stars and red giants}
 {Astronomy \& Astrophysics, 2018}
 {\texttt{doi:0.1051/0004-6361/201833106, arXiv:1809.05105}}
@@ -373,7 +382,7 @@ design.}
 {The Astrophysical Journal, 2018}
 {\texttt{doi:10.3847/1538-4357/aabf90, arXiv:1804.06669}}
 
-\bibentry{{Davies}, G. R., {Lund}, M. N. and {Miglio}, A. ... \textbf{Hall, O. J.} ... et al. [22 citations]}
+\bibentry{{Davies}, G. R., {Lund}, M. N. and {Miglio}, A. ... \textbf{Hall, O. J.} ... et al. [23 citations]}
 {Using red clump stars to correct the \emph{Gaia} DR1 parallaxes}
 {Astronomy \& Astrophysics, 2017}
 {\texttt{doi:10.1051/0004-6361/201630066, arXiv:1701.02506}}
