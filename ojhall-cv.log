@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.6.21)  5 JUL 2019 12:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2019.6.21)  5 AUG 2019 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -732,30 +732,30 @@ LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
 LaTeX Font Info:    Font shape `T1/lato-TLF/l/n' will be
 (Font)              scaled to size 8.0pt on input line 82.
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--109
+Underfull \hbox (badness 10000) in paragraph at lines 76--115
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 112--165
+Underfull \hbox (badness 10000) in paragraph at lines 118--176
 
  []
 
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 174.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 185.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 
 LaTeX Font Warning: Font shape `T1/cmtt/l/n' undefined
-(Font)              using `T1/cmtt/m/n' instead on input line 174.
+(Font)              using `T1/cmtt/m/n' instead on input line 185.
 
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \hbox (badness 10000) in paragraph at lines 168--183
+Underfull \hbox (badness 10000) in paragraph at lines 179--194
 
  []
 
@@ -763,48 +763,48 @@ Underfull \hbox (badness 10000) in paragraph at lines 168--183
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
 LaTeX Font Info:    Font shape `T1/lato-TLF/el/n' will be
-(Font)              scaled to size 24.0pt on input line 185.
+(Font)              scaled to size 24.0pt on input line 196.
 LaTeX Font Info:    Font shape `T1/lato-TLF/l/n' will be
-(Font)              scaled to size 24.0pt on input line 185.
+(Font)              scaled to size 24.0pt on input line 196.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 196.
+(Font)              <9> on input line 207.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 196.
+(Font)              <6> on input line 207.
 LaTeX Font Info:    Font shape `T1/lato-TLF/l/n' will be
-(Font)              scaled to size 7.0pt on input line 204.
+(Font)              scaled to size 7.0pt on input line 215.
 
-Underfull \hbox (badness 10000) in paragraph at lines 190--217
+Underfull \hbox (badness 10000) in paragraph at lines 201--228
 
  []
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/n' will be
-(Font)              scaled to size 7.0pt on input line 238.
+(Font)              scaled to size 7.0pt on input line 249.
 
-Underfull \hbox (badness 10000) in paragraph at lines 220--260
+Underfull \hbox (badness 10000) in paragraph at lines 231--271
 
  []
 
 LaTeX Font Info:    Font shape `T1/lato-TLF/b/it' will be
-(Font)              scaled to size 10.0pt on input line 272.
+(Font)              scaled to size 10.0pt on input line 283.
 
-Underfull \hbox (badness 10000) in paragraph at lines 266--292
+Underfull \hbox (badness 10000) in paragraph at lines 277--303
 
  []
 
 [2
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 297--320
+Underfull \hbox (badness 10000) in paragraph at lines 308--331
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 325--350
+Underfull \hbox (badness 10000) in paragraph at lines 336--361
 
  []
 
 
-Overfull \hbox (1.69568pt too wide) in paragraph at lines 378--379
+Overfull \hbox (1.69568pt too wide) in paragraph at lines 389--390
 []\T1/lato-TLF/l/it/10 FliPer: A global mea-sure of power den-sity to es-ti-mat
 e sur-face grav-i-ties of main-sequence solar-like
  []
@@ -812,11 +812,11 @@ e sur-face grav-i-ties of main-sequence solar-like
 [3
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 390.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 390.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 401.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 401.
  (./ojhall-cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 390.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 390.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 401.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 401.
 Package rerunfilecheck Info: File `ojhall-cv.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
@@ -843,7 +843,7 @@ o/Lato-Thin.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
 mmi7.pfb></usr/share/texmf/fonts/type1/public/cm-super/sftt0800.pfb></usr/share
 /texmf/fonts/type1/public/cm-super/sftt1000.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/stmaryrd/stmary9.pfb>
-Output written on ojhall-cv.pdf (3 pages, 286809 bytes).
+Output written on ojhall-cv.pdf (3 pages, 292506 bytes).
 PDF statistics:
  72 PDF objects out of 1000 (max. 8388607)
  56 compressed objects within 1 object stream
