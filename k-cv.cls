@@ -90,7 +90,7 @@ minimum height=3cm, yshift=0.5mm] (box) at (current page.north){};
 }
 
 \newcommand{\smallheader}[2]{%
-  \newgeometry{left=3.5cm,top=2cm,right=3.5cm,bottom=2.5cm}
+  \newgeometry{left=2.5cm,top=2cm,right=2.5cm,bottom=2cm}
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth,
 minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
@@ -118,13 +118,13 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
         blue\or%
         red\or%
         orange\or%
-        green\or%
         purple\or%
         blue\or%
         red\or%
         orange\or%
-        green\or%
-        purple\else%
+        purple\or%
+        blue\or%
+        red\else%
         headercolor\fi%
     } #1#2#3%
   }%
@@ -176,6 +176,22 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
     {\footnotesize\color{gray} \bodyfont #3}%
   }\\}
 
+\newcommand{\centry}[4]{%
+	\hangindent=3mm \hangafter1%
+	{\leavevmode\color{gray}\small #1}&\parbox[t]{14.0cm}{%
+		\textbf{#2}%
+		\hfill%
+		{\footnotesize\color{gray} \bodyfont #3}\\%
+		\bodyfont #4\vspace{\parsep}%
+	}\\}
+
+\newcommand{\centrythree}[3]{%
+	\hangindent=3mm \hangafter1%
+	{\leavevmode\color{gray}\small #1}&\parbox[t]{14.0cm}{%
+		\bodyfont #2%
+		\hfill%
+		{\footnotesize\color{gray} \bodyfont #3}%
+	}\\}
 
 %%%%%%%%%%%%%%%%%%%%%%%
 % Manual Bibliography %
