@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.13)  18 SEP 2019 16:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.13)  18 SEP 2019 17:14
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -846,7 +846,7 @@ Here is how much of TeX's memory you used:
  20666 multiletter control sequences out of 15000+600000
  128712 words of font info for 112 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,56p,664b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62i,12n,56p,669b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
 {/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lato/lato-01.enc}{/usr/loca
 l/texlive/2016/texmf-dist/fonts/enc/dvips/lato/lato-02.enc}</usr/local/texlive/
@@ -860,7 +860,7 @@ blic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
 ic/cm-super/sftt0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
 /cm-super/sftt1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/s
 tmaryrd/stmary9.pfb>
-Output written on ojhall-cv.pdf (3 pages, 167738 bytes).
+Output written on ojhall-cv.pdf (3 pages, 167711 bytes).
 PDF statistics:
  77 PDF objects out of 1000 (max. 8388607)
  61 compressed objects within 1 object stream
