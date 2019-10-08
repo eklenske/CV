@@ -25,6 +25,12 @@
 \usepackage[T1]{fontenc}
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 
+\definecolor{c1}{HTML}{0173b2}
+\definecolor{c2}{HTML}{de8f05}
+\definecolor{c3}{HTML}{029e73}
+\definecolor{c4}{HTML}{d55e00}
+\pagenumbering{arabic}
+
 \begin{document}
 \header{Oliver James }{Hall}{PhD student in asteroseismology} % Your name and current job
 
@@ -33,21 +39,22 @@
 %-------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{programming}
+\section{\color{c1}programming}
 \bodyfont Python, Git
 Unix, LaTeX,
-R, SQL (basic)
-\section{skills}
+SQL
+\section{\color{c2}skills}
 Stan
 PyMC3
 emcee 
 Bayesian statistics
 Hierarchical models
 Asteroseismology
+Jupyter Notebooks
 Software development \& publication (Python)
-\section{languages}
+\section{\color{c3}languages}
 English, Dutch (bilingual)
-\section{contact}
+\section{\color{c4}contact}
 School of Physics \& Astronomy
 University of Birmingham
 B15 2TT
@@ -65,10 +72,11 @@ United Kingdom
 %-------------------------------------------------------------------------------
 %	EDUCATION SECTION
 %----------------------------------------------------------------------------------------
-\section{research interests}
-\bodyfont With the recent successes of the \textit{Kepler}, K2, \textit{Gaia} and TESS missions, we have access to vast catalogues of astronomical data. I am interested in leveraging these data to draw new inferences of stellar physics through Bayesian population studies of asteroseismic data. I previously used hierarchical latent variable models to constrain the red clump distance ladder to an unprecedented precision. I am currently studying the relation between mass, age and rotation of solar-like stars in the \textit{Kepler} field, and the correlation between properties of red clump giant populations.
+\section{\color{c1}research interests}
+\parbox{14.0cm}{\bodyfont With the recent successes of the \textit{Kepler}, K2, \textit{Gaia} and TESS missions, we have access to vast catalogues of astronomical data. I am interested in leveraging these catalogues to draw new inferences of stellar physics through Bayesian population studies of asteroseismic data. I previously used hierarchical latent variable models to constrain the red clump distance ladder to an unprecedented precision. I am currently studying the relation between mass, age and rotation of solar-like stars in the \textit{Kepler} field, and the correlation between properties of red clump giant populations.}
+\vspace{.1\parskip}
 
-\section{presentations}
+\section{\color{c2}presentations}
 
 \begin{entrylist}
 %%------------------------------------------------
@@ -82,7 +90,7 @@ United Kingdom
 {2019 Jul.}
 {TASC5/KASC12}
 {MIT, MA, USA}
-{\textbf{Invited talk:} "Accessible Asteroseismology with Lightkurve"\\ \small{Poster: "Improving gyrochronology of field stars with asteroseismic age and rotation"}}
+{\textbf{\textcolor{c2}{Invited talk:}} "Accessible Asteroseismology with Lightkurve"\\ \small{Poster: "Improving gyrochronology of field stars with asteroseismic age and rotation"}}
 %------------------------------------------------
 \entry
 {2018 Dec.}
@@ -116,13 +124,13 @@ United Kingdom
 %------------------------------------------------
 \end{entrylist}
 
-\section{conferences \& workshops}
+\section{\color{c3}conferences \& workshops}
 
 \begin{entrylist}
 %------------------------------------------------
 \entrythree
 {2019 Oct.}
-{T'DA 9 (\textbf{invited})}
+{T'DA 9 (\textbf{\textcolor{c3}{invited}})}
 {Institute for Astronomy, HI, USA}
 %------------------------------------------------
 \entrythree
@@ -132,7 +140,7 @@ United Kingdom
 %------------------------------------------------
 \entrythree
 {2019 Jul.}
-{TASC5/KASC12  (\textbf{invited})}
+{TASC5/KASC12  (\textbf{\textcolor{c3}{invited}})}
 {MIT, MA, USA}
 %------------------------------------------------
 \entrythree
@@ -142,7 +150,7 @@ United Kingdom
 %------------------------------------------------
 \entrythree
 {2018 Oct.}
-{T'DA 5 (\textbf{invited})}
+{T'DA 5 (\textbf{\textcolor{c3}{invited}})}
 {Ohio State University, OH, USA}
 %------------------------------------------------
 \entrythree
@@ -188,14 +196,14 @@ United Kingdom
 \end{entrylist}
 
 
-\section{research visits}
+\section{\color{c4}research visits}
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {2018 Oct.}
 {Visit to the KeplerGO office [3 weeks]}
 {NASA Ames Research Centre, CA, USA}
-{Invited to build the \texttt{periodogram} module of \texttt{lightkurve}}
+{Invited to build the \textbf{\textcolor{c4}{periodogram}} module of \textbf{\textcolor{c4}{\href{http://docs.lightkurve.org/}{Lightkurve}}}}
 %------------------------------------------------
 \entry
 {2018 Jan.}
@@ -205,11 +213,13 @@ United Kingdom
 %----------------------------------------------
 \end{entrylist}
 
-\clearpage
-\smallheader{oliver james  }{hall}
+%\clearpage
+%\smallheader{oliver james  }{hall}
+\newgeometry{left=2.5cm,top=1cm,right=2.5cm,bottom=1cm}
+%\clearpage
+%\newgeometry{left=2.5cm,top=1cm,right=2.5cm,bottom=1cm}
 
-
-\section{education}
+\section{\color{c1}education}
 
 \begin{entrylist}
 \centry
@@ -240,181 +250,246 @@ United Kingdom
 \end{entrylist}
 
 
-\section{teaching and research}
+\section{\color{c2}teaching and research}
 \begin{entrylist}
-%------------------------------------------------
-\centry
-{2019}
-{Advanced HE - Associate Fellow (AFHEA)}
-{Advanced HE}
-{}
-%------------------------------------------------
-\centry
-{2019}
-{Access to Birmingham (A2B) supervisor}
-{University of Birmingham}
-{Support applicants from disenfranchised backgrounds through the A2B scheme.}
-%------------------------------------------------
-\centry
-{2017 \to now}
-{2\textsuperscript{nd} Year Laboratory Projects Demonstrator}
-{University of Birmingham, UK}
-{Taught students to build apparatus, understand their results. I marked their work and provided constructive feedback.}
-%------------------------------------------------
-\centry
-{2016 \to now}
-{3\textsuperscript{rd} Year Observatory Laboratory Supervisor}
-{University of Birmingham, UK}
-{Supervised students using an observatory. Helped students understand their results as well as the use of IRAF, Unix, and Python.}
-%------------------------------------------------
-\centry
-{2015}
-{Summer Undergraduate Reserach Experience (SURE)}
-{University of Leicester, UK}
-{Performed a six-week project using Python to program a robotic arm system for testing a prototype focal plane for the Cherenkov Telescope Array.}
-%------------------------------------------------
-\centry
-{2015}
-{Ogden Trust Teach Physics Intern}
-{Bishop Challoner Catholic College, Birmingham, UK}
-{Helped teach pupils throughout lessons, prepared and taught a lesson \& careers workshop of my own
-design.}
-%------------------------------------------------
+	%------------------------------------------------
+	\centry
+	{2019}
+	{Advanced HE - \textcolor{c2}{Associate Fellow} (AFHEA)}
+	{Advanced HE}
+	{}
+	%------------------------------------------------
+	\centry
+	{2019}
+	{Access to Birmingham (A2B) supervisor}
+	{University of Birmingham}
+	{Support applicants from disenfranchised backgrounds through the A2B scheme.}
+	%------------------------------------------------
+	\centry
+	{2017 \to now}
+	{2\textsuperscript{nd} Year Laboratory Projects Demonstrator}
+	{University of Birmingham, UK}
+	{Taught students to build apparatus, understand their results. I marked their work and provided constructive feedback.}
+	%------------------------------------------------
+	\centry
+	{2016 \to now}
+	{3\textsuperscript{rd} Year Observatory Laboratory Supervisor}
+	{University of Birmingham, UK}
+	{Supervised students using an observatory. Helped students understand their results as well as the use of IRAF, Unix, and Python.}
+	%------------------------------------------------
+	\centry
+	{2015}
+	{Summer Undergraduate Reserach Experience (SURE)}
+	{University of Leicester, UK}
+	{Performed a six-week project using Python to program a robotic arm system for testing a prototype focal plane for the Cherenkov Telescope Array.}
+	%------------------------------------------------
+	\centry
+	{2015}
+	{Ogden Trust Teach Physics Intern}
+	{Bishop Challoner Catholic College, Birmingham, UK}
+	{Helped teach pupils throughout lessons, prepared and taught a lesson \& careers workshop of my own
+		design.}
+	%------------------------------------------------
 \end{entrylist}
 
-\section{outreach \& engagement}
+\section{\color{c3}outreach \& engagement}
 \begin{entrylist}
-%------------------------------------------------
-\centry
-{2019 \to now}
-{\emph{Author}, Astrobites Collaboration}
-{}
-{Write and edit monthly summaries of astronomy papers for an undergraduate level. \\ Committee member for \textbf{Advertising}, \textbf{Moderating}, \textbf{Hiring}, \textbf{Undergraduate Engagement}, and \textbf{Equality, Diversity \& Inclusion}}
-%------------------------------------------------
-\centry
-{2019}
-{\emph{Developer}, State of The Universe collaboration}
-{Astro Hack Week 2019}
-{Helped build and maintain an informative package for teachers and planetarium guides.}
-%------------------------------------------------
-\centry
-{2018 \to 2019}
-{\emph{Organiser}, 9\textsuperscript{th} BEAR Conference}
-{University of Birmingham, UK}
-{Organised local annual high performance computing conference.}
-%------------------------------------------------
-\centry
-{2018 \to now}
-{\emph{Demonstrator}, Applicant Visit Day}
-{University of Birmingham, UK}
-{Developed and taught laboratory sessions for undergraduate applicants.}
-%------------------------------------------------
-\centry
-{2016 \to 2017}
-{\emph{Partnered Researcher}, Royal Society Partnership Grant}
-{}
-{Developed and taught a series of lessons and lab activities engaging Year 9 pupils with exoplanet characterisation and asteroseismology.}
+	%------------------------------------------------
+	\centry
+	{2019 \to now}
+	{\emph{Author}, Astrobites Collaboration}
+	{}
+	{Write and edit monthly summaries of astronomy papers for an undergraduate level. \\ Committee member for \textbf{\textcolor{c3}{Advertising}}, \textbf{\textcolor{c3}{Moderating}}, \textbf{\textcolor{c3}{Hiring}}, \textbf{\textcolor{c3}{Undergraduate Engagement}}, and \textbf{\textcolor{c3}{Equality, Diversity \& Inclusion}}}
+	%------------------------------------------------
+	\centry
+	{2019}
+	{\emph{Developer}, State of The Universe collaboration}
+	{Astro Hack Week 2019}
+	{Helped build and maintain an informative package for teachers and planetarium guides.}
+	%------------------------------------------------
+	\centry
+	{2018 \to 2019}
+	{\emph{Organiser}, 9\textsuperscript{th} BEAR Conference}
+	{University of Birmingham, UK}
+	{Organised local annual high performance computing conference.}
+	%------------------------------------------------
+	\centry
+	{2018 \to now}
+	{\emph{Demonstrator}, Applicant Visit Day}
+	{University of Birmingham, UK}
+	{Developed and taught laboratory sessions for undergraduate applicants.}
+	%------------------------------------------------
+	\centry
+	{2016 \to 2017}
+	{\emph{Partnered Researcher}, \textcolor{c3}{Royal Society Partnership Grant}}
+	{}
+	{Developed and taught a series of lessons and lab activities engaging Year 9 pupils with exoplanet characterisation and asteroseismology.}
 \end{entrylist}
 
+\section{\color{c4}grants \& awards}
+
+\begin{entrylist}
+	%------------------------------------------------
+	\entrythree
+	{2019}
+	{\textbf{\textcolor{c4}{\pounds 815}} - Alumni Fund One-Off Grants}
+	{The Ogden Trust, UK}
+	%------------------------------------------------
+	\entrythree
+	{2018}
+	{\textbf{\textcolor{c4}{\pounds 300}} - IOP Research Student Conference Fund \emph{(declined)}}
+	{Institute of Physics, UK}
+	
+	%------------------------------------------------
+	\entrythree
+	{2016}
+	{\textbf{\textcolor{c4}{\pounds 3000}} - Royal Society Partnership Grant}
+	{The Royal Society, UK}
+	%------------------------------------------------
+	\entrythree
+	{2015}
+	{Teach Physics Oustanding Intern 2015 - shortlisted}
+	{The Ogden Trust, UK}
+	%------------------------------------------------
+	
+\end{entrylist}
+
+%\clearpage
+%\smallheader{Oliver James  }{Hall}
 \clearpage
-\smallheader{oliver james  }{hall}
+\newgeometry{left=2.5cm,top=1cm,right=2.5cm,bottom=1cm}
 
-\section{community services}
+\section{\color{c1}community services}
 \begin{entrylist}
-%------------------------------------------------
-\centrythree
-{2018 \to now}
-{Member of the \texttt{lightkurve} collaboration}
-{NASA Ames Research Centre, CA, USA}
-%------------------------------------------------
-\centrythree
-{2016 \to now}
-{Member of the \emph{TESS Data for Asteroseismology} (T'DA) collaboration }
-{}
-%------------------------------------------------
-\centrythree
-{2016 \to now}
-{Member of the \emph{TESS Asteroseismic Science Consortium} (TASC)}
-{}
-%------------------------------------------------
-\centrythree
-{2017}
-{LOC member for TASC3/KASC11}
-{University of Birmingham, UK}
-%------------------------------------------------
+	%------------------------------------------------
+	\centrythree
+	{2018 \to now}
+	{Member of the \textbf{\textcolor{c1}{Lightkurve}} collaboration}
+	{NASA Ames Research Centre, CA, USA}
+	%------------------------------------------------
+	\centrythree
+	{2016 \to now}
+	{Member of the \emph{TESS Data for Asteroseismology} (\textbf{\textcolor{c1}{T'DA}}) collaboration }
+	{}
+	%------------------------------------------------
+	\centrythree
+	{2016 \to now}
+	{Member of the \emph{TESS Asteroseismic Science Consortium} (TASC)}
+	{}
+	%------------------------------------------------
+	\centrythree
+	{2017}
+	{LOC member for TASC3/KASC11}
+	{University of Birmingham, UK}
+	%------------------------------------------------
 \end{entrylist}
 
 
 
-\section{grants \& awards}
 
-\begin{entrylist}
-%------------------------------------------------
-\centrythree
-{2019}
-{\textbf{\pounds 815} - Alumni Fund One-Off Grants}
-{The Ogden Trust, UK}
-%------------------------------------------------
-\centrythree
-{2018}
-{\textbf{\pounds 300} - IOP Research Student Conference Fund \emph{(declined)}}
-{Institute of Physics, UK}
 
-%------------------------------------------------
-\centrythree
-{2016}
-{\textbf{\pounds 3000} - Royal Society Partnership Grant}
-{The Royal Society, UK}
-%------------------------------------------------
-\centrythree
-{2015}
-{Teach Physics Oustanding Intern 2015 - shortlisted}
-{The Ogden Trust, UK}
-%------------------------------------------------
 
-\end{entrylist}
+\section{\color{c3}selected publications}
+\vspace{-0.5cm}
+\subsubsection*{\color{c3}refereed publications:}
+\vspace{-0.2cm}
+\begin{enumerate}
+	\item \bibentry{\textbf{\color{c3}Hall, O. J.}, Davies, G. R., Elsworth, Y. P. and 9 coauthors [9 citations]}
+	{Testing asteroseismology with \textit{Gaia} DR2: Hierarchical models of the Red Clump}
+	{Monthly Notices of the Royal Astronomical Society, 2019}
+	{\texttt{\href{https://academic.oup.com/mnras/article-abstract/486/3/3569/5475128}{doi:10.1093/mnras/stz1092}, \href{https://arxiv.org/abs/1904.07919}{arXiv:1904.07919}}}
+	
+	\item \bibentry{Khan, S., \textbf{\color{c3}Hall, O. J.}, Miglio, A., Davies, G. R., Mosser, B., Girardi, L., Montalb\'an, J. [7 citations]}
+	{The Red-giant Branch Bump Revisited: Constraints on Envelope Overshooting in a Wide Range of Masses and Metallicities}
+	{The Astrophysical Journal, 2018}
+	{\texttt{\href{https://iopscience.iop.org/article/10.3847/1538-4357/aabf90}{doi:10.3847/1538-4357/aabf90}, \href{https://arxiv.org/abs/1804.06669}{arXiv:1804.06669}}}
+	
+	\item \bibentry{Bugnet, L., Garc\'{i}a, R. A., Davies, G. R., Mathur, S., Corsaro, E., \textbf{\color{c3}Hall, O. J.}, Rendle, B. M. [9 citations]}
+	{FliPer: A global measure of power density to estimate surface gravities of main-sequence solar-like stars and red giants}
+	{Astronomy \& Astrophysics, 2018}
+	{\texttt{\href{https://www.aanda.org/articles/aa/abs/2018/12/aa33106-18/aa33106-18.html}{doi:0.1051/0004-6361/201833106}, \href{https://arxiv.org/abs/1809.05105}{arXiv:1809.05105}}}
+	
+	\item \bibentry{{Bugnet}, L., {Garc\'{i}a}, R. A., {Mathur}, S.,
+		{Davies}, G. R., \textbf{\color{c3}{Hall}, O. J.}, {Lund}, M. N., {Rendle}, B. M. [1 citation]}
+	{FliPer$_{Class}$: In search of solar-like pulsators among TESS targets}
+	{arXiv e-prints, 2019}
+	{\texttt{\href{https://www.aanda.org/articles/aa/abs/2019/04/aa34780-18/aa34780-18.html}{doi:10.1051/0004-6361/201834780}, \href{https://arxiv.org/abs/1902.09854}{arXiv:1902.09854}}}
+	
+	\item \bibentry{{Huber}, D., {Chaplin}, W. J., {Chontos}, A and 139 coauthors including \textbf{\color{c3}Hall, O. J.} [14 citations]}
+	{{A Hot Saturn Orbiting An Oscillating Late Subgiant Discovered by TESS}}
+	{arXiv e-prints, 2019}
+	{\texttt{\href{https://iopscience.iop.org/article/10.3847/1538-3881/ab1488}{doi:10.3847/1538-3881/ab1488}, \href{https://arxiv.org/abs/1901.01643}{arXiv:1901.01643}}}
+	
+	\item \bibentry{{Davies}, G. R., {Lund}, M. N., {Miglio}, A., Elsworth, Y. P. and 13 coauthors including \textbf{\color{c3}Hall, O. J.} [24 citations]}
+	{Using red clump stars to correct the \emph{Gaia} DR1 parallaxes}
+	{Astronomy \& Astrophysics, 2017}
+	{\texttt{\href{https://www.aanda.org/articles/aa/abs/2017/02/aa30066-16/aa30066-16.html}{doi:10.1051/0004-6361/201630066}, \href{https://arxiv.org/abs/1701.02506}{arXiv:1701.02506}}}
+\end{enumerate}
+%
+%\clearpage
+%\smallheader{Oliver James }{Hall}
+\vspace{-0.2cm}
+\subsubsection*{\color{c3}Software Publications:}
+\vspace{-0.2cm}
+\begin{enumerate}
+	\item \bibentry{{Lightkurve Collaboration}, {Cardoso}, J. V. d. M., {Hedges}, C., Gully-Santiago, M., Saunders, N., Cody, A-M., Barclay, T., \textbf{\color{c3}Hall, O. J.}, Sagear, S., Turtelboom, E., Zhang, J., Tzanidakis, A., Mighell, K., Coughlin, J., Bell, K., Berta-Thompson, Z., Williams, P., Dotson, J., Barentsen, G. [5 citations]}
+	{Lightkurve: Kepler and TESS time series analysis in Python}
+	{Astrophysics Source Code Library, 2018}
+	{\texttt{\href{http://ascl.net/1812.013}{ascl:1812.013}}}
+\end{enumerate}
 
-\section{publications}
-\bibentry{\textbf{Hall, O. J.}, Davies, G. R., Elsworth, Y. P. et al. [7 citations]}
-{Testing asteroseismology with \textit{Gaia} DR2: Hierarchical models of the Red Clump}
-{Monthly Notices of the Royal Astronomical Society, 2019}
-{\texttt{\href{https://academic.oup.com/mnras/article-abstract/486/3/3569/5475128}{doi:10.1093/mnras/stz1092}, \href{https://arxiv.org/abs/1904.07919}{arXiv:1904.07919}}}
+\vspace{-0.2cm}
+\subsubsection*{\color{c3}Unrefereed Publications:}
+\vspace{-0.2cm}
+\begin{enumerate}
+	\item \bibentry{{Khullar}, G., {Kholer}, S., {Konchady}, T. , Foley, M., Hornsby, A. L., de los Reyes, M. A., Chirsari, N. E., Villar, V. A., Shin, K., Doughty, D., Shipp, N., Ramasawmy, J., Penoyre, Z., Lichtenberg, T., Storey-Fisher, K., \textbf{\color{c3}Hall, O. J.}, Lewis, B., Pearlman, A. B., C\'{a}rdenas-Avenda\~{n}o, A., Bridge, J. S., Gonz\'{a}lez-Egea, E., Panwar, V., Slepian, Z., Zimmerman, M.}
+	{Astrobites as a Community-led Model for Education, Science Communication, and Accessibility in Astrophysics}
+	{arXiv e-prints, 2019}
+	{\texttt{\href{https://arxiv.org/abs/1907.09496}{arXiv:1907.09496}}}
+\end{enumerate}
 
-\bibentry{{Khullar}, G., {Kholer}, S., {Konchady}, T. ... \textbf{{Hall}, O. J.} ... et al.}
-{Astrobites as a Community-led Model for Education, Science Communication, and Accessibility in Astrophysics}
-{arXiv e-prints, 2019}
-{\texttt{\href{https://arxiv.org/abs/1907.09496}{arXiv:1907.09496}}}
 
-\bibentry{{Huber}, D., {Chaplin}, W. J., {Chontos}, A ... \textbf{{Hall}, O. J.} ... et al. [12 citations]}
-{{A Hot Saturn Orbiting An Oscillating Late Subgiant Discovered by TESS}}
-{arXiv e-prints, 2019}
-{\texttt{\href{https://iopscience.iop.org/article/10.3847/1538-3881/ab1488}{doi:10.3847/1538-3881/ab1488}, \href{https://arxiv.org/abs/1901.01643}{arXiv:1901.01643}}}
-
-\bibentry{{Bugnet}, L., {Garc{\'\i}a}, R. A., {Mathur}, S.,
-         {Davies}, G. R., \textbf{{Hall}, O. J.}, {Lund}, M. N., {Rendle}, B. M. [1 citation]}
-{FliPer$_{Class}$: In search of solar-like pulsators among TESS targets}
-{arXiv e-prints, 2019}
-{\texttt{\href{https://www.aanda.org/articles/aa/abs/2019/04/aa34780-18/aa34780-18.html}{doi:10.1051/0004-6361/201834780}, \href{https://arxiv.org/abs/1902.09854}{arXiv:1902.09854}}}
-
-\bibentry{{Lightkurve Collaboration}, {Cardoso}, J. V. d. M., {Hedges}, C. ...       					\textbf{{Hall}, O. J.} ... et al. [5 citations]}
-{Lightkurve: Kepler and TESS time series analysis in Python}
-{Astrophysics Source Code Library, 2018}
-{\texttt{\href{http://ascl.net/1812.013}{ascl:1812.013}}}
-
-\bibentry{{Bugnet}, L., {Garc{\'\i}a}, R. A., {Davies}, G. R. ..
-         \textbf{{Hall}, O. J.} ... et al. [9 citations]}
-{FliPer: A global measure of power density to estimate surface gravities of main-sequence solar-like stars and red giants}
-{Astronomy \& Astrophysics, 2018}
-{\texttt{\href{https://www.aanda.org/articles/aa/abs/2018/12/aa33106-18/aa33106-18.html}{doi:0.1051/0004-6361/201833106}, \href{https://arxiv.org/abs/1809.05105}{arXiv:1809.05105}}}
-
-\bibentry{{Khan}, S., \textbf{{Hall}, O. J.}, {Miglio}, A. et al. [7 citations]}
-{The Red-giant Branch Bump Revisited: Constraints on Envelope Overshooting in a Wide Range of Masses and Metallicities}
-{The Astrophysical Journal, 2018}
-{\texttt{\href{https://iopscience.iop.org/article/10.3847/1538-4357/aabf90}{doi:10.3847/1538-4357/aabf90}, \href{https://arxiv.org/abs/1804.06669}{arXiv:1804.06669}}}
-
-\bibentry{{Davies}, G. R., {Lund}, M. N. and {Miglio}, A. ... \textbf{Hall, O. J.} ... et al. [24 citations]}
-{Using red clump stars to correct the \emph{Gaia} DR1 parallaxes}
-{Astronomy \& Astrophysics, 2017}
-{\texttt{\href{https://www.aanda.org/articles/aa/abs/2017/02/aa30066-16/aa30066-16.html}{doi:10.1051/0004-6361/201630066}, \href{https://arxiv.org/abs/1701.02506}{arXiv:1701.02506}}}
+%
+%\bibentry{\textbf{Hall, O. J.}, Davies, G. R., Elsworth, Y. P. et al. [7 citations]}
+%{Testing asteroseismology with \textit{Gaia} DR2: Hierarchical models of the Red Clump}
+%{Monthly Notices of the Royal Astronomical Society, 2019}
+%{\texttt{\href{https://academic.oup.com/mnras/article-abstract/486/3/3569/5475128}{doi:10.1093/mnras/stz1092}, \href{https://arxiv.org/abs/1904.07919}{arXiv:1904.07919}}}
+%
+%\bibentry{{Khullar}, G., {Kholer}, S., {Konchady}, T. ... \textbf{{Hall}, O. J.} ... et al.}
+%{Astrobites as a Community-led Model for Education, Science Communication, and Accessibility in Astrophysics}
+%{arXiv e-prints, 2019}
+%{\texttt{\href{https://arxiv.org/abs/1907.09496}{arXiv:1907.09496}}}
+%
+%\bibentry{{Huber}, D., {Chaplin}, W. J., {Chontos}, A ... \textbf{{Hall}, O. J.} ... et al. [12 citations]}
+%{{A Hot Saturn Orbiting An Oscillating Late Subgiant Discovered by TESS}}
+%{arXiv e-prints, 2019}
+%{\texttt{\href{https://iopscience.iop.org/article/10.3847/1538-3881/ab1488}{doi:10.3847/1538-3881/ab1488}, \href{https://arxiv.org/abs/1901.01643}{arXiv:1901.01643}}}
+%
+%\bibentry{{Bugnet}, L., {Garc{\'\i}a}, R. A., {Mathur}, S.,
+%         {Davies}, G. R., \textbf{{Hall}, O. J.}, {Lund}, M. N., {Rendle}, B. M. [1 citation]}
+%{FliPer$_{Class}$: In search of solar-like pulsators among TESS targets}
+%{arXiv e-prints, 2019}
+%{\texttt{\href{https://www.aanda.org/articles/aa/abs/2019/04/aa34780-18/aa34780-18.html}{doi:10.1051/0004-6361/201834780}, \href{https://arxiv.org/abs/1902.09854}{arXiv:1902.09854}}}
+%
+%\bibentry{{Lightkurve Collaboration}, {Cardoso}, J. V. d. M., {Hedges}, C. ...       					\textbf{{Hall}, O. J.} ... et al. [5 citations]}
+%{Lightkurve: Kepler and TESS time series analysis in Python}
+%{Astrophysics Source Code Library, 2018}
+%{\texttt{\href{http://ascl.net/1812.013}{ascl:1812.013}}}
+%
+%\bibentry{{Bugnet}, L., {Garc{\'\i}a}, R. A., {Davies}, G. R. ..
+%         \textbf{{Hall}, O. J.} ... et al. [9 citations]}
+%{FliPer: A global measure of power density to estimate surface gravities of main-sequence solar-like stars and red giants}
+%{Astronomy \& Astrophysics, 2018}
+%{\texttt{\href{https://www.aanda.org/articles/aa/abs/2018/12/aa33106-18/aa33106-18.html}{doi:0.1051/0004-6361/201833106}, \href{https://arxiv.org/abs/1809.05105}{arXiv:1809.05105}}}
+%
+%\bibentry{{Khan}, S., \textbf{{Hall}, O. J.}, {Miglio}, A. et al. [7 citations]}
+%{The Red-giant Branch Bump Revisited: Constraints on Envelope Overshooting in a Wide Range of Masses and Metallicities}
+%{The Astrophysical Journal, 2018}
+%{\texttt{\href{https://iopscience.iop.org/article/10.3847/1538-4357/aabf90}{doi:10.3847/1538-4357/aabf90}, \href{https://arxiv.org/abs/1804.06669}{arXiv:1804.06669}}}
+%
+%\bibentry{{Davies}, G. R., {Lund}, M. N. and {Miglio}, A. ... \textbf{Hall, O. J.} ... et al. [24 citations]}
+%{Using red clump stars to correct the \emph{Gaia} DR1 parallaxes}
+%{Astronomy \& Astrophysics, 2017}
+%{\texttt{\href{https://www.aanda.org/articles/aa/abs/2017/02/aa30066-16/aa30066-16.html}{doi:10.1051/0004-6361/201630066}, \href{https://arxiv.org/abs/1701.02506}{arXiv:1701.02506}}}
 
 \end{document}

@@ -25,6 +25,10 @@
 \definecolor{gray}{gray}{.35}
 \definecolor{lightgray}{gray}{.35}
 
+\definecolor{c1}{HTML}{0173b2}
+\definecolor{c2}{HTML}{de8f05}
+\definecolor{c3}{HTML}{029e73}
+\definecolor{c4}{HTML}{d55e00}
 \definecolor{green}{HTML}{C2E15F}
 \definecolor{orange}{HTML}{FDA333}
 \definecolor{purple}{HTML}{D3A4F9}
@@ -78,11 +82,11 @@
 minimum height=3cm, yshift=0.5mm] (box) at (current page.north){};
     \node [anchor=center, yshift=0.3cm] (name) at (box) {%
       \fontsize{48pt}{72pt}\color{header}%
-      {\thinfont #1}{\bodyfont  #2}
+      {\bodyfont #1}{\bodyfont  #2}
     };
     \node [anchor=north] at (name.south) {%
       \fontsize{18pt}{24pt}\color{header}%
-      \thinfont #3%
+      \bodyfont #3%
     };
   \end{tikzpicture}
   \vspace{1.5cm}
@@ -115,17 +119,17 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   {%
     \color{%
       \ifcase\value{colorCounter}%
-        blue\or%
-        red\or%
-        orange\or%
-        purple\or%
-        blue\or%
-        red\or%
-        orange\or%
-        purple\or%
-        blue\or%
-        red\else%
-        headercolor\fi%
+        c1\or%
+        c2\or%
+        c3\or%
+        c4\or%
+        c1\or%
+        c2\or%
+        c3\or%
+        c4\or%
+        c1\or%
+        c2\else%
+        c3\fi%
     } #1#2#3%
   }%
   \stepcounter{colorCounter}%
@@ -135,7 +139,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   \par
   {%
     \LARGE\headingfont\color{headercolor}%
-    \@sectioncolor #1% 
+    #1% 
     \par
   }
 }
@@ -234,5 +238,6 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 % Other tweaks %
 %%%%%%%%%%%%%%%%
 
-\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=2.5cm,nohead,nofoot]{geometry}
+\RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
+\hypersetup{urlbordercolor=c4}
