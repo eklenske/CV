@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.13)  18 SEP 2019 17:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017) (preloaded format=pdflatex 2017.10.13)  1 SEP 2020 12:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**reduced-cv.tex
-(./reduced-cv.tex
+**CV_Hall.tex
+(./CV_Hall.tex
 LaTeX2e <2017-04-15>
 Babel <3.14> and hyphenation patterns for 84 language(s) loaded.
 (./k-cv.cls
@@ -538,37 +538,36 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 )
 \Hy@SectionHShift=\skip44
-)
-Package hyperref Info: Option `colorlinks' set `false' on input line 240.
-)
+))
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/fontenc.sty
 Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1enc.def
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
-))
-(./reduced-cv.aux)
-\openout1 = `reduced-cv.aux'.
+)) (./CV_Hall.aux)
+\openout1 = `CV_Hall.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Try loading font information for T1+fla on input line 29.
- (/usr/local/texlive/2016/texmf-dist/tex/latex/lato/t1fla.fd
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 34.
+LaTeX Font Info:    ... okay on input line 34.
+LaTeX Font Info:    Try loading font information for T1+fla on input line 34.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/lato/t1fla.fd
 File: t1fla.fd 2011/12/25 Fontinst v1.933 font definitions for T1/fla.
-) (/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+)
+(/usr/local/texlive/2016/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count122
 \scratchdimen=\dimen172
@@ -598,7 +597,7 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-LaTeX Info: Redefining \microtypecontext on input line 29.
+LaTeX Info: Redefining \microtypecontext on input line 34.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -618,16 +617,16 @@ ABD: EveryShipout initializing macros
 *geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
 * driver: pdftex
-* paper: <default>
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(173.56198pt, 398.0539pt, 42.67912pt)
-* v-part:(T,H,B)=(56.9055pt, 666.9326pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 723.83812pt, 14.22636pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=398.0539pt
-* \textheight=666.9326pt
+* \textheight=723.83812pt
 * \oddsidemargin=101.29199pt
 * \evensidemargin=101.29199pt
 * \topmargin=-15.36449pt
@@ -649,7 +648,7 @@ ABD: EveryShipout initializing macros
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 \AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring OFF on input line 29.
+Package hyperref Info: Link coloring OFF on input line 34.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -658,13 +657,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count128
 )
-LaTeX Info: Redefining \ref on input line 29.
-LaTeX Info: Redefining \pageref on input line 29.
-LaTeX Info: Redefining \nameref on input line 29.
+LaTeX Info: Redefining \ref on input line 34.
+LaTeX Info: Redefining \pageref on input line 34.
+LaTeX Info: Redefining \nameref on input line 34.
 
-(./reduced-cv.out) (./reduced-cv.out)
+(./CV_Hall.out) (./CV_Hall.out)
 \@outlinefile=\write4
-\openout4 = `reduced-cv.out'.
+\openout4 = `CV_Hall.out'.
 
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/microtype/mt-cmr.cfg
@@ -672,47 +671,34 @@ File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman
 (RS)
 )
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 71.
+(Font)              <7> on input line 76.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 71.
-LaTeX Font Info:    Try loading font information for U+stmry on input line 71.
+(Font)              <5> on input line 76.
+LaTeX Font Info:    Try loading font information for U+stmry on input line 76.
 
 (/usr/local/texlive/2016/texmf-dist/tex/latex/stmaryrd/Ustmry.fd)
-Underfull \hbox (badness 1448) in paragraph at lines 89--89
+Underfull \hbox (badness 1448) in paragraph at lines 94--94
 \T1/fla/l/n/10 "Testing as-ter-o-seis-mol-ogy with \T1/fla/l/it/10 Gaia \T1/fla
 /l/n/10 DR2: Hi-er-ar-chi-cal Mod-els & the Red
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--116
+Underfull \hbox (badness 10000) in paragraph at lines 76--121
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--187
-
- []
-
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 196.
-
-(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
-File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-
-LaTeX Font Warning: Font shape `T1/cmtt/l/n' undefined
-(Font)              using `T1/cmtt/m/n' instead on input line 196.
-
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-
-Underfull \hbox (badness 10000) in paragraph at lines 190--205
+Underfull \hbox (badness 10000) in paragraph at lines 124--192
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 208--233
+Underfull \hbox (badness 10000) in paragraph at lines 195--210
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 213--238
 
  []
 
@@ -721,19 +707,19 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--233
 {/usr/local/texlive/2016/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
-* paper: <default>
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=472.03123pt
-* \textheight=681.15898pt
+* \textheight=738.0645pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-15.36449pt
+* \topmargin=-43.81725pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -752,48 +738,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 208--233
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 246.
+(Font)              <9> on input line 253.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 246.
+(Font)              <6> on input line 253.
 
-Underfull \hbox (badness 10000) in paragraph at lines 240--267
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 270--309
+Underfull \hbox (badness 10000) in paragraph at lines 248--281
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 311--343
+Underfull \hbox (badness 10000) in paragraph at lines 284--323
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 345--368
+Underfull \hbox (badness 10000) in paragraph at lines 325--357
 
  []
 
 [2
 
-
-] [3]
+]
 *geometry* verbose mode - [ newgeometry ] result:
 * driver: pdftex
-* paper: <default>
+* paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
 * h-part:(L,W,R)=(71.13188pt, 472.03123pt, 71.13188pt)
-* v-part:(T,H,B)=(56.9055pt, 681.15898pt, 56.9055pt)
+* v-part:(T,H,B)=(28.45274pt, 738.0645pt, 28.45274pt)
 * \paperwidth=614.295pt
 * \paperheight=794.96999pt
 * \textwidth=472.03123pt
-* \textheight=681.15898pt
+* \textheight=738.0645pt
 * \oddsidemargin=-1.1381pt
 * \evensidemargin=-1.1381pt
-* \topmargin=-15.36449pt
+* \topmargin=-43.81725pt
 * \headheight=0.0pt
 * \headsep=0.0pt
 * \topskip=10.0pt
@@ -812,53 +792,71 @@ Underfull \hbox (badness 10000) in paragraph at lines 345--368
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Overfull \hbox (14.26431pt too wide) in paragraph at lines 410--411
-[]\T1/fla/l/it/10 The Red-giant Branch Bump Re-vis-ited: Con-straints on En-ve-
-lope Over-shoot-ing in a Wide Range of Masses and Metal-lic-i-ties 
+Underfull \hbox (badness 10000) in paragraph at lines 362--385
+
  []
 
-[4
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 398.
+
+(/usr/local/texlive/2016/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+
+LaTeX Font Warning: Font shape `T1/cmtt/l/n' undefined
+(Font)              using `T1/cmtt/m/n' instead on input line 398.
+
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+
+Overfull \hbox (29.07841pt too wide) in paragraph at lines 398--399
+\T1/fla/l/it/10 Summary\T1/fla/l/n/10 : Con-strained the lu-mi-nos-ity of the R
+ed Clump and the \T1/fla/l/it/10 Gaia \T1/fla/l/n/10 DR2 par-al-lax zero-point 
+off-set si-mul-ta-ne-ously
+ []
+
+[3
 
 
-]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 417.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 417.
- (./reduced-cv.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 417.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 417.
-Package rerunfilecheck Info: File `reduced-cv.out' has not changed.
+] [4]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 478.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 478.
+ (./CV_Hall.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 478.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 478.
+Package rerunfilecheck Info: File `CV_Hall.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 417.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 478.
  ) 
 Here is how much of TeX's memory you used:
- 17507 strings out of 492990
- 331187 string characters out of 6132635
- 423419 words of memory out of 5000000
- 20668 multiletter control sequences out of 15000+600000
- 135396 words of font info for 126 fonts, out of 8000000 for 9000
+ 17504 strings out of 492990
+ 330911 string characters out of 6132635
+ 424614 words of memory out of 5000000
+ 20661 multiletter control sequences out of 15000+600000
+ 117617 words of font info for 113 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,12n,56p,416b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}
-{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lato/lato-01.enc}{/usr/loca
-l/texlive/2016/texmf-dist/fonts/enc/dvips/lato/lato-02.enc}</usr/local/texlive/
+ 62i,12n,56p,413b,532s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2016/texmf-dist/fonts/enc/dvips/lato/lato-02.enc}{/usr/lo
+cal/texlive/2016/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}{/usr/loca
+l/texlive/2016/texmf-dist/fonts/enc/dvips/lato/lato-01.enc}</usr/local/texlive/
 2016/texmf-dist/fonts/type1/public/lato/Lato-Bol.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/lato/Lato-BolIta.pfb></usr/local/texlive/2016/texm
-f-dist/fonts/type1/public/lato/Lato-Hai.pfb></usr/local/texlive/2016/texmf-dist
-/fonts/type1/public/lato/Lato-Lig.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/lato/Lato-LigIta.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
-pe1/public/lato/Lato-Reg.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/cm-super/sftt0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/cm-super/sftt1000.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/s
-tmaryrd/stmary9.pfb>
-Output written on reduced-cv.pdf (4 pages, 172088 bytes).
+f-dist/fonts/type1/public/lato/Lato-Lig.pfb></usr/local/texlive/2016/texmf-dist
+/fonts/type1/public/lato/Lato-LigIta.pfb></usr/local/texlive/2016/texmf-dist/fo
+nts/type1/public/lato/Lato-Reg.pfb></usr/local/texlive/2016/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/cm-super/sftt0800.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/stmaryrd/stmary9.pfb>
+Output written on CV_Hall.pdf (4 pages, 146732 bytes).
 PDF statistics:
- 81 PDF objects out of 1000 (max. 8388607)
- 64 compressed objects within 1 object stream
- 5 named destinations out of 1000 (max. 500000)
- 34829 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 120 PDF objects out of 1000 (max. 8388607)
+ 103 compressed objects within 2 object streams
+ 20 named destinations out of 1000 (max. 500000)
+ 32781 words of extra memory for PDF output out of 35830 (max. 10000000)
 
