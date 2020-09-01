@@ -105,7 +105,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   \end{tikzpicture}
   \vspace{0.2cm}
   \vspace{-2\parskip}
- 
+
 }
 
 
@@ -139,7 +139,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
   \par
   {%
     \LARGE\headingfont\color{headercolor}%
-    #1% 
+    #1%
     \par
   }
 }
@@ -171,7 +171,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
     {\footnotesize\color{gray} \bodyfont #3}\\%
     \bodyfont #4\vspace{\parsep}%
   }\\}
-  
+
 \newcommand{\entrythree}[3]{%
 \hangindent=3mm \hangafter1%
   {\leavevmode\color{gray}\small #1}&\parbox[t]{11.8cm}{%
