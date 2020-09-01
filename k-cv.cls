@@ -203,13 +203,30 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 
 % each item is a manual entry, since a bibfile is more pain than pleasure
 % for most people's CVs.
-\newcommand{\bibentry}[4]{%
+\newcommand{\bibentry}[5]{%
   {\bodyfont #1}\\%
   \hangindent=5mm \hangafter1%
   {\color{black} \bodyfont \emph{#2}\\%
   {\footnotesize \bodyfont #3}\\%
-  {\footnotesize \bodyfont #4}}%
+  {\bodyfont #4}\\%
+  {\footnotesize \bodyfont #5}}%
   }%
+
+\newcommand{\bibun}[4]{%
+  {\bodyfont #1}\\%
+  \hangindent=5mm \hangafter1%
+  {\color{black} \bodyfont \emph{#2}\\%
+  {\footnotesize \bodyfont #3}\\%
+  {\bodyfont #4}}%
+  }%
+
+\newcommand{\bibuf}[4]{%
+	{\bodyfont #1}\\%
+	\hangindent=5mm \hangafter1%
+	{\color{black} \bodyfont \emph{#2}\\%
+	{\footnotesize \bodyfont #3}\\%
+	{\footnotesize \bodyfont #4}}%
+}%
 
 %%%%%%%%%%%%%%
 % Side block %
