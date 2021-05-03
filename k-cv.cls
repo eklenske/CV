@@ -78,7 +78,7 @@
 \newcommand{\header}[3]{%
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth,
-minimum height=3cm, yshift=0.5mm] (box) at (current page.north){};
+minimum height=4cm, yshift=0.5mm] (box) at (current page.north){};
     \node [anchor=center, yshift=0.3cm] (name) at (box) {%
       \fontsize{48pt}{72pt}\color{header}%
       {\bodyfont #1}{\bodyfont  #2}
@@ -88,12 +88,12 @@ minimum height=3cm, yshift=0.5mm] (box) at (current page.north){};
       \bodyfont #3%
     };
   \end{tikzpicture}
-  \vspace{1.5cm}
+  \vspace{2.5cm}
   \vspace{-2\parskip}
 }
 
 \newcommand{\smallheader}[2]{%
-  \newgeometry{left=2.5cm,top=2cm,right=2.5cm,bottom=2cm}
+  \newgeometry{left=2.6cm,top=2cm,right=2.5cm,bottom=2cm}
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth,
 minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
@@ -253,7 +253,7 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
     \vspace{5mm}{\Large\headingfont\color{headercolor} ##1 \vspace{\parskip}}
   }
 
-  \begin{textblock}{4.0}(1.1, 3)
+  \begin{textblock}{4.4}(0.8, 4)
   \begin{flushright}
   \obeycr
 }{%

@@ -26,6 +26,23 @@
 \newcommand\tab[1][1cm]{\hspace*{#1}}
 %0173b2, de8f05, 029e73, d55e00, cc78bc
 \definecolor{c1}{HTML}{0173b2}
+\definecolor{c2}{HTML}{de8f05}
+\definecolor{c3}{HTML}{029e73}
+\definecolor{c4}{HTML}{d55e00}
+\definecolor{c5}{HTML}{cc78bc}
+
+\usepackage{fontspec}
+\newfontfamily{\FA}[Path = fonts/]{fontawesome-webfont}
+\newfontfamily{\FAB}[Path = fonts/]{academicons}
+\def\faEnvelope{{\FA\symbol{"F0E0}}}
+\def\faGithub{{\FA\symbol{"F09B}}}
+\def\faDesktop{{\FA\symbol{"F108}}}
+\def\faPhone{{\FA\symbol{"F095}}}
+\def\faHandPointerO{{\FA\symbol{"F25A}}}
+\def\faMapMarker{{\FA\symbol{"F041}}}
+\def\faTwitter{{\FA\symbol{"F099}}}
+\def\faOrcid{{\FAB\symbol{"e9c3}}}
+
 \pagenumbering{arabic}
 
 \begin{document}
@@ -36,34 +53,38 @@
 %-------------------------------------------------------------------------------
 
 \begin{aside} % In the aside, each new line forces a line break
-\section{\color{c1}programming}
-\bodyfont Python, Git
-Unix, LaTeX,
-SQL
-\section{\color{c1}skills}
-Stan, PyMC3, emcee 
+\section{\color{c1}coordinates}
+\href{mailto:oliver.hall@esa.int}{oliver.hall@esa.int}\ \faEnvelope
+\href{http://www.github.com/ojhall94}{github.com/ojhall94}\ \faGithub
+\href{www.asteronomer.com}{asteronomer.com}\ \faHandPointerO
+\href{http://www.twitter.com/asteronomer}{@asteronomer}\ \faTwitter
+\href{tel:+310614227748}{(+31)(0)614227748}\ \faPhone
+\href{https://g.page/EuropeanSpaceAgencyESTEC?share}{ESA ESTEC, Noordwijk, NL}\ \faMapMarker
+ORCID: 
+\href{http://www.orcid.com/0000-0002-0468-4775}{0000-0002-0468-4775}
+\section{\color{c2}skills}
+\bodyfont Stan, PyMC3, emcee 
 Bayesian statistics
 Hierarchical models
 Asteroseismology
 Jupyter Notebooks
 Science Communication \& Writing
 Software development \& publication
-\section{\color{c1}languages}
+\section{\color{c3}programming}
+\bodyfont Python, Git
+Unix, LaTeX,
+SQL
+\section{\color{c4}languages}
 English, Dutch (bilingual)
-\section{\color{c1}contact}
-European Space Research \& Technology Centre
-Keplerlaan 1
-Postbus 299
-2200 AG Noordwijk
-The Netherlands
+\section{\color{c5}open-source code}
+\href{https://github.com/keplergo/lightkurve}{\texttt{lightkurve}}
+Accessible light curves
 ~
-\href{mailto:oliver.hall@esa.int}{oliver.hall@esa.int}
-\href{www.asteronomer.com}{asteronomer.com}
-\href{http://www.github.com/ojhall94}{GitHub/ojhall94}
-\href{http://www.twitter.com/asteronomer}{@asteronomer}
-\href{http://www.orcid.com/0000-0002-0468-4775}{ORCID/}
-\href{http://www.orcid.com/0000-0002-0468-4775}{0000-0002-0468-4775}
-Tel: (+31)(0)614227748
+\href{https://github.com/grd349/pbjam}{\texttt{PBJam}}
+Automated asteroseismology
+~
+\href{https://github.com/ojhall94/michael}{\texttt{michael}}
+Speedy TESS rotation periods
 \end{aside}
 
 \section{\color{c1}positions}
