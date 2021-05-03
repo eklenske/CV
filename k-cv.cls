@@ -57,7 +57,6 @@
 \RequirePackage{microtype}
 \RequirePackage[default]{lato}
 
-% \newcommand{\normalfont}{\fontseries{l}\selectfont}
 \newcommand{\bodyfont}{\fontseries{l}\selectfont}
 \newcommand{\thinfont}{\fontseries{el}\selectfont}
 \newcommand{\headingfont}{\fontseries{b}\selectfont}
@@ -151,6 +150,19 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 }
 
 \pagestyle{empty} % removes page number
+
+% Set up the custom unordered list.
+\newcommand{\cvlist}{%
+	\rightmargin=0in
+	\leftmargin=0.15in
+	\topsep=0em
+	\partopsep=0pt
+	\itemsep=0ex
+	\parsep=0pt
+	\itemindent=0\leftmargin
+	\listparindent=0\leftmargin
+	\settowidth{\labelsep}{~}
+}
 
 %%%%%%%%%%%%%%%%%%%%
 % List environment %
@@ -257,4 +269,8 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 
 \RequirePackage[left=6.1cm,top=2cm,right=1.5cm,bottom=.5cm,nohead,nofoot]{geometry}
 \RequirePackage{hyperref}
-\hypersetup{urlbordercolor=c4}
+\definecolor{linkcol}{HTML}{044A75}
+\hypersetup{
+	colorlinks,
+	linkcolor= {linkcol},
+	urlcolor={linkcol}}
