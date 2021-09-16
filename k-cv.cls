@@ -38,20 +38,28 @@
 \definecolor{dgr}{RGB}{000,125,122}
 \definecolor{ora}{HTML}{FF9933}
 
+
 \ifdefined\@cv@print
   \colorlet{green}{gray}
   \colorlet{orange}{gray}
   \colorlet{purple}{gray}
   \colorlet{red}{gray}
   \colorlet{blue}{gray}
+  \colorlet{dred}{gray}
+  \colorlet{dblu}{gray}
+  \colorlet{dgr}{gray}
+  \colorlet{ora}{gray}
   \colorlet{fillheader}{white}
-  \colorlet{header}{gray}
+  \colorlet{header}{black}
+  \colorlet{textcolor}{black}
+  \colorlet{headercolor}{black}
 \else
   \colorlet{fillheader}{gray}
   \colorlet{header}{white}
+  \colorlet{textcolor}{gray}
+  \colorlet{headercolor}{gray}
 \fi
-\colorlet{textcolor}{gray}
-\colorlet{headercolor}{gray}
+
 
 %%%%%%%%%
 % Fonts %
@@ -166,10 +174,10 @@ minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
 \renewcommand{\bfseries}{\headingfont\color{headercolor}}
 \newcommand{\entry}[4]{%
 \hangindent=3mm \hangafter1%
-  {\leavevmode\color{gray}\small #1}&\parbox[t]{11.8cm}{%
+  {\leavevmode\color{headercolor}\small #1}&\parbox[t]{11.8cm}{%
     \textbf{#2}%
     \hfill%
-    {\footnotesize\color{gray} \bodyfont #3}\\%
+    {\footnotesize\color{headercolor} \bodyfont #3}\\%
     \bodyfont #4\vspace{\parsep}%
   }\\}
 
