@@ -108,7 +108,7 @@ minimum height=4cm, yshift=0.5mm] (box) at (current page.north){};
   \begin{tikzpicture}[remember picture,overlay]
     \node [rectangle, fill=fillheader, anchor=north, minimum width=\paperwidth,
 minimum height=2cm, yshift=0.5mm] (box) at (current page.north){};
-    \node [anchor=center] (name) at (box) {%
+    \node [anchor=center, yshift=-1mm] (name) at (box) {%
       \fontsize{24pt}{36pt}\color{header}%
       {\thinfont #1}{\bodyfont  #2}
     };
